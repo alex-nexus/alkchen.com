@@ -39,10 +39,19 @@ title: Home
     </div>
 
     <div class="row listrecent">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
 
         {% for post in paginator.posts %}
 
-        {% include postbox.html %}
+            {% include postbox.html %}
 
         {% endfor %}
 
@@ -53,9 +62,11 @@ title: Home
 <!-- Pagination
 ================================================== -->
 <div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
+    <div class="pointerup">
+        <i class="fa fa-caret-up"></i>
+    </div>
+    <span class="navigation" role="navigation">
+        {% include pagination.html %}
+    </span>
 </div>
 
