@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Inception Movie"
+title:  Why Good Leaders Make Bad Decisions
 author: alex
 categories: [ Jekyll, tutorial ]
 tags: [red, yellow]
