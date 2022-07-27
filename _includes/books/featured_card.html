@@ -1,0 +1,39 @@
+<!-- begin post -->
+<div class="col-md-6 mb-30px">
+    <div class="listfeaturedtag h-100">
+        <div class="row h-100">
+            <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
+                <div class="h-100">
+                    <div class="wrapthumbnail">
+                        <a href="{{ site.baseurl }}{{ book.url }}">
+                            <img class="featured-box-img-cover" src="{{ book.external_image_url }}">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-7">
+                <div class="h-100 card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <a class="text-dark" href="{{ site.baseurl }}{{ book.url }}">{{ book.title }}</a>                                
+                            </h2>
+                            <h4 class="card-text">{{ book.introduction | strip_html | truncatewords:15 }}</h4>
+                        </div>
+                        <div class="card-footer b-0 bg-white mt-auto">
+                            <div class="wrapfooter">
+                                {% if book.amzn_review_avg %}
+                                <div class="mb-2 mt-2 font-weight-normal">
+                                    {% include star_rating.html %}
+                                </div>
+                                {% endif %}
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
