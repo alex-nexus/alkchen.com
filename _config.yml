@@ -17,11 +17,15 @@ authors:
     name: Alex
     display_name: AC
     avatar: 'assets/images/avatar.jpeg'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
     email: alkchen@gmail.com
-    web: https://www.solitude.net
     twitter: https://twitter.com/wowthemesnet
     description: "Author of this website"
+  ashishb:
+    name: Ashishb
+    display_name: ASHI
+    avatar: 'assets/images/avatar.png'
+    web: https://ashishb.net/
+    
 
 collections:
   authors:
