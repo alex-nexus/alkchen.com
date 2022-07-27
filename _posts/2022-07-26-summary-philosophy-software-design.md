@@ -1,6 +1,5 @@
 ---
-layout: post
-type: book summary
+layout: book_summary
 title:  Book Summary - A Philosophy of Software Design
 author: ashishb.net
 categories: software
