@@ -1,6 +1,6 @@
 # Site
-name: Great Book Reviews
-title: Great Book Reviews
+name: AC's notes and thoughts
+title: AC's notes and thoughts
 description: "On Startups, Management, Product, Software, and VC Investing"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
@@ -37,7 +37,6 @@ collections:
     output: true
 
 collections:
-  - authors
   - books
   
 # Plugins
