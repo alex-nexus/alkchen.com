@@ -25,7 +25,7 @@
             {{ author.display_name }}
         </div>
         <div class="lead">Date:
-            {{ page.date | date: "%Y/%m/%d"}}
+            {{ page.date | date_to_string }}
         </div>
         {% if page.tags != null %}
         <div class="lead">Tags:            

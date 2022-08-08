@@ -46,7 +46,7 @@
                 <h5 class="card-title">About this Summary</h5>
                 <p class="card-text">
                     <dt>Date</dt>
-                    <dd>{{ page.date | date: "%Y/%m/%d"}}</dd>
+                    <dd>{{ page.date | date_to_string}}</dd>
                     <dt>Author</dt>
                     <dd>
                         {% if author.avatar_file %}
