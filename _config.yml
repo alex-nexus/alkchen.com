@@ -25,6 +25,12 @@ authors:
     display_name: ASHI
     avatar: 'assets/images/avatar.png'
     web: https://ashishb.net/
+    description: "Author"
+  sglaveski:
+    name: Steve Glaveski
+    display_name: Steve Glaveski
+    avatar: https://miro.medium.com/fit/c/88/88/1*X4C0i2lwN4YvU6ntNbadXg.png
+    web: https://medium.com/@glaveski
     
 
 collections:

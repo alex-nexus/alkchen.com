@@ -1,14 +1,13 @@
 ---
 layout: book_summary
 title:  Book Summary - A Philosophy of Software Design
-author: ashishb.net
+author: ashishb
 categories: software
 tags: [testing,documentation,complexity,coding]
-image: 
 description: "Good system designers get to spend a larger fraction of time in the design phase. Poor designers spend most of their time chasing bugs in complicated and brittle code."
 featured: true
 source_url: https://ashishb.net/book-summary/book-summary-a-philosophy-of-software-design-by-john-k-ousterhout/
-image: assets/images/11.jpg
+image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1531857377l/39996759._SX318_.jpg
 ---
 
 > Good system designers get to spend a larger fraction of time in the design phase. Poor designers spend most of their time chasing bugs in complicated and brittle code.

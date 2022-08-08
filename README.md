@@ -25,5 +25,5 @@ Thank you!
 ### Reference
   - how to jekyll: https://jekyllcodex.org/
   - Markdown cheatsheet: https://www.markdownguide.org/cheat-sheet/
-
+  - Liquid Template: https://shopify.github.io/liquid/
 
