@@ -16,7 +16,7 @@ authors:
   alex:
     name: Alex
     display_name: AC
-    avatar: assets/images/avatar.jpeg
+    avatar_file: assets/images/avatar.jpeg
     email: alkchen@gmail.com
     twitter: https://twitter.com/wowthemesnet
     description: "Author of this website"
@@ -28,7 +28,7 @@ authors:
   sglaveski:
     name: Steve Glaveski
     display_name: Steve Glaveski
-    avatar: https://miro.medium.com/fit/c/88/88/1*X4C0i2lwN4YvU6ntNbadXg.png
+    avatar_url: https://miro.medium.com/fit/c/88/88/1*X4C0i2lwN4YvU6ntNbadXg.png
     web: https://medium.com/@glaveski
     
 

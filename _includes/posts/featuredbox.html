@@ -21,32 +21,31 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                                <a class="text-dark text-capitalize" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                                 {% if post.rating %}
                                 <div class="mb-2 mt-2 font-weight-normal">
                                 {% include star_rating_postbox.html %}
                                 </div>
                                 {% endif %}
                             </h5>
-                            <h6 class="card-subtitle mb-2 text-muted">
-                                {% assign sorted_categories = page.categories | compact | sort %}
-                                {{ sorted_categories }}
+                            <h6 class="card-subtitle my-3 text-muted">
+                                {% assign sorted_categories = post.categories | compact | sort %}
                                 {% for category in sorted_categories %}
-                                <span class="badge rounded-pill bg-primary">
-                                    <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>
-                                </span>
+                                <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">
+                                    <span class="badge rounded-pill bg-primary">{{ category }}</span>
+                                </a>
                                 {% endfor %}
                             </h6>
-                            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:25 }}</h4>
+                            <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords: 25 }}</h4>
                         </div>
                         <div class="card-footer b-0 bg-white mt-auto">
                             <div class="wrapfooter">
                                 {% if post.author %}
                                     <span class="meta-footer-thumb">
-                                        {% if author.avatar %}
-                                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
-                                        {% else %}
-                                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                                        {% if author.avatar_file %}
+                                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar_file }}" alt="{{ author.display_name }}">
+                                        {% elsif author.avatar_url %}
+                                        <img class="author-thumb" src="{{ author.avatar_url }}" alt="{{ author.display_name }}">
                                         {% endif %}
                                     </span>
                                     <span class="author-meta">
