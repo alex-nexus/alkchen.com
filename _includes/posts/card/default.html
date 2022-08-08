@@ -14,13 +14,13 @@
                 <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">
                     <span class="badge rounded-pill bg-primary text-capitalize">{{ category }}</span>
                 </a>
-                {% endfor %}                        
+                {% endfor %}
             </div>
         
-            <div class="card-body h-50 my-4 ms-4">
-                <h3 class="card-title mb-4">
+            <div class="card-body h-50 my-4">
+                <h4 class="card-title mb-4">
                     <a class="text-dark text-capitalize" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>                            
-                </h3>
+                </h4>
                 <p class="card-text">{{ post.description | strip_html | truncatewords: 100 }}</p>
             </div>
             
