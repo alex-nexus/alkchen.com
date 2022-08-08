@@ -1,5 +1,6 @@
 ---
-layout: book_summary
+layout: post
+type: book_summary
 title:  Book Summary - A Philosophy of Software Design
 book_authors:  [John Ousterhout]
 author: ashishb

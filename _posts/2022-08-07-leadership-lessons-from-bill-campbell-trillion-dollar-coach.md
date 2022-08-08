@@ -1,5 +1,5 @@
 ---
-layout: book_summary
+layout: post
 type: Book Summary
 title: Leadership Lessons from Bill Campbell, the Trillion Dollar Coach
 book_authors: [Eric Schmidt, Jonathan Rosenberg, Alan Eagle]
