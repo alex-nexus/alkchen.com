@@ -2,9 +2,10 @@ alex:
   name: Alex
   display_name: AC
   avatar_file: assets/images/avatar.jpeg
-  email: alkchen@gmail.com
-  twitter: https://twitter.com/wowthemesnet
   description: "Author of this website"
+bill_campbell:
+  name: Bill Campbell
+  display_name: Bill Campbell
 ashishb:
   name: Ashishb
   display_name: ASHI
