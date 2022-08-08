@@ -16,14 +16,13 @@ authors:
   alex:
     name: Alex
     display_name: AC
-    avatar: 'assets/images/avatar.jpeg'
+    avatar: assets/images/avatar.jpeg
     email: alkchen@gmail.com
     twitter: https://twitter.com/wowthemesnet
     description: "Author of this website"
   ashishb:
     name: Ashishb
     display_name: ASHI
-    avatar: 'assets/images/avatar.png'
     web: https://ashishb.net/
     description: "Author"
   sglaveski:
@@ -62,7 +61,7 @@ jekyll-archives:
     category: '/category/:name/'
     
 # Pagination 
-paginate: 6
+paginate: 10
 paginate_path: /page:num/
     
 # Other

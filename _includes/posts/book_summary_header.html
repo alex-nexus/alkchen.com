@@ -35,10 +35,14 @@
     <div class="col-xs-12 col-md-4 text-md-left">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">About this Post</h5>
+                <h5 class="card-title">About this Summary</h5>
                 <p class="card-text">
-                    <dt>Type</dt>
-                    <dd>{{ page.type }}</dd>
+                    <dt>Author</dt>
+                    <dd>
+                        {% if author.avatar %}
+                        <img class="author-thumb" src="{{ author.avatar }}" alt="{{ author.display_name }}">
+                        {% endif %}
+                        {{ author.display_name }}
                     </dd>
                     <dt>Tags</dt>
                     <dd>
@@ -48,14 +52,7 @@
                             <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">{{ tag }}</a>
                         </span>                    
                         {% endfor %}
-                    </dd>
-                    <dt>Summary Author</dt>
-                    <dd>
-                        {% if summary_author.avatar %}
-                        <img class="author-thumb" src="{{ summary_author.avatar }}" alt="{{ summary_author.display_name }}">
-                        {% endif %}
-                        {{ summary_author.display_name }}
-                    </dd>
+                    </dd>                    
                 </p>
                 <a class="card-link" href="{{ page.source_url }}" target="_blank">Source</a>                            
             </div>
