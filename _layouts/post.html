@@ -21,7 +21,8 @@ post_class: post-template
 
             <div class="mainheading">
                 <span class="badge rounded-pill bg-secondary text-capitalize">{{ post.type | replace: "_", " " }}</span>
-                <h1 class="posttitle text-capitalize">{{ page.title }}</h1>                
+                <h1 class="posttitle text-capitalize">{{ page.title }}</h1>
+                {% include reading-time.html %}
             </div>            
                     
             {% if page.type == 'book_summary' %}
@@ -67,13 +68,11 @@ post_class: post-template
 <!-- Begin Comments
 ================================================== -->
 {% if page.comments != false %}
-    <div class="container">
-        <div id="comments" class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                {% include disqus.html %}
-            </div>
+    <div id="comments" class="row justify-content-center mb-5">
+        <div class="col-md-12">
+            {% include disqus.html %}
         </div>
-    </div>
+    </div>    
 {% endif %}
 <!--End Comments
 ================================================== -->
