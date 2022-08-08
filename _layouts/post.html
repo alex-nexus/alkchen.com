@@ -26,6 +26,7 @@ post_class: post-template
 
             <div class="mainheading">
                 <h1 class="posttitle text-capitalize">{{ page.title }}</h1>
+                <div class="lead">{{ page.date | date: "%Y/%m/%d"}}</div>
             </div>            
 
             {% if page.layout == 'book_summary' %}
