@@ -1,4 +1,4 @@
-{% assign author = site.authors[page.author] %}
+{% assign author = site.data.authors[page.author] %}
 
 <!-- Post Featured Image -->    
 <div class="row">   
@@ -24,6 +24,7 @@
             {% endif %}
             {{ author.display_name }}
         </div>
+        {% if page.tags != null %}
         <div class="lead">Tags:            
                 {% assign sorted_tags = page.tags | sort %}
                 {% for tag in sorted_tags %}
@@ -32,6 +33,7 @@
                 </span>                    
                 {% endfor %}            
         </div>
+        {% endif %}
         {% if page.source_url %}
         <a class="card-link" href="{{ page.source_url }}" target="_blank">Source</a>                            
         {% endif %}                
