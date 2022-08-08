@@ -3,7 +3,7 @@ layout: post
 title:  12 traits of an excellent engineering manager
 author: alex
 categories: [ leadership ]
-image: assets/images/posts/steve-kerr.png
+image: /assets/images/posts/steve-kerr.png
 ---
 
 1. An excellent manager has great intuition on what talent is needed for the job, and can hire the right people.
