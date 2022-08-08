@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-md-4 col-sm-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">About this Book</h5>
+                <p class="card-text"></p>
+                    <dt>Author(s)</dt>
+                    <dd>                                    
+                        {{ page.book_authors | join: ", " }}                                
+                    </dd>                                
+                    <dt>Ratings</dt>
+                    <dd>4.5</dd>                    
+                </p>
+            </div>
+        </div>                    
+    </div>
+    
+    <div class="col-xs-12 col-md-4 text-md-left">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">About this Post</h5>
+                <p class="card-text">
+                    <dt>Type</dt>
+                    <dd>{{ page.type }}</dd>
+                    </dd>
+                    <dt>Tags</dt>
+                    <dd>
+                        {% assign sorted_tags = page.tags | sort %}
+                        {% for tag in sorted_tags %}
+                        <span class="badge bg-light text-dark rounded-pill">
+                            <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">{{ tag }}</a>
+                        </span>                    
+                        {% endfor %}
+                    </dd>
+                    <dt>Summary Author</dt>
+                    <dd>
+                        {% if summary_author.avatar %}
+                        <img class="author-thumb" src="{{ summary_author.avatar }}" alt="{{ summary_author.display_name }}">
+                        {% endif %}
+                        {{ summary_author.display_name }}
+                    </dd>
+                </p>
+                <a class="card-link" href="{{ page.source_url }}" target="_blank">Source</a>                            
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <a href="{{ page.amazon_url }}" target="_blank">
+            <button type="button" class="btn btn-danger">Buy on Amazon</button>                        
+        </a>
+    </div>    
+</div>
