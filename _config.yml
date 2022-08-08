@@ -9,28 +9,7 @@ google_analytics: 'UA-X-1'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
-permalink: /:title/
-
-# Authors
-authors:
-  alex:
-    name: Alex
-    display_name: AC
-    avatar_file: assets/images/avatar.jpeg
-    email: alkchen@gmail.com
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of this website"
-  ashishb:
-    name: Ashishb
-    display_name: ASHI
-    web: https://ashishb.net/
-    description: "Author"
-  sglaveski:
-    name: Steve Glaveski
-    display_name: Steve Glaveski
-    avatar_url: https://miro.medium.com/fit/c/88/88/1*X4C0i2lwN4YvU6ntNbadXg.png
-    web: https://medium.com/@glaveski
-    
+permalink: /:title/    
 
 collections:
   authors:
