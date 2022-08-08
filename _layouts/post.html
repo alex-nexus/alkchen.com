@@ -9,12 +9,7 @@ post_class: post-template
 ================================================== -->
 <div class="container">
     <div class="row">
-
-        <!-- Post Share -->
-        <div class="col-md-1 pl-0">
-            {% include share.html %}
-        </div>
-
+        
         <!-- Post -->        
         <div class="col-md-10 flex-first flex-md-unordered">
             {% assign sorted_categories = page.categories | sort %}
@@ -25,13 +20,13 @@ post_class: post-template
             {% endfor %}
 
             <div class="mainheading">
-                <h1 class="posttitle text-capitalize">{{ page.title }}</h1>
-                <div class="lead">{{ page.date | date: "%Y/%m/%d"}}</div>
+                <span class="badge rounded-pill bg-secondary text-capitalize">{{ post.type | replace: "_", " " }}</span>
+                <h1 class="posttitle text-capitalize">{{ page.title }}</h1>                
             </div>            
-
-            {% if page.layout == 'book_summary' %}
+                    
+            {% if page.type == 'book_summary' %}
                 {% include posts/book_summary_header.html %}
-            {% elsif page.layout == 'video' %}
+            {% elsif page.type == 'video' %}
                 {% include posts/video_header.html %}
             {% else %}
                 {% include posts/post_header.html %}

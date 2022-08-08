@@ -24,6 +24,9 @@
             {% endif %}
             {{ author.display_name }}
         </div>
+        <div class="lead">Date:
+            {{ page.date | date: "%Y/%m/%d"}}
+        </div>
         {% if page.tags != null %}
         <div class="lead">Tags:            
                 {% assign sorted_tags = page.tags | sort %}

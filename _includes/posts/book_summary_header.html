@@ -3,7 +3,10 @@
 
 <!-- Post Featured Image -->    
 <div class="row">   
-    <div class="col-xs-12 col-md-12 text-md-left">
+    <div class="col-md-1 pl-0">
+        {% include share.html %}
+    </div>
+    <div class="col-xs-11 col-md-11">
         {% if page.image %}
             {% if site.lazyimages == "enabled" %}
             <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
@@ -11,12 +14,12 @@
             <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
         {% endif %}
-    </div>
+    </div>    
 </div>
 <!-- End Featured Image -->
 
 <div class="row">
-    <div class="col-md-4 col-sm-12">
+    <div class="col-md-8 col-sm-12">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">About this Book</h5>
@@ -26,7 +29,12 @@
                         {{ page.book_authors | join: ", " }}                                
                     </dd>                                
                     <dt>Ratings</dt>
-                    <dd>4.5</dd>                    
+                    <dd>4.5</dd>          
+
+                    {% if page.description %}
+                    <dt>Description</dt>         
+                    <dd>{{ page.description }}</dd>
+                    {% endif %}
                 </p>
             </div>
         </div>                    
@@ -37,6 +45,8 @@
             <div class="card-body">
                 <h5 class="card-title">About this Summary</h5>
                 <p class="card-text">
+                    <dt>Date</dt>
+                    <dd>{{ page.date | date: "%Y/%m/%d"}}</dd>
                     <dt>Author</dt>
                     <dd>
                         {% if author.avatar_file %}
@@ -57,12 +67,12 @@
                     </dd>                    
                 </p>
                 <a class="card-link" href="{{ page.source_url }}" target="_blank">Source</a>                            
+                <div class="mt-4">
+                    <a href="{{ page.amazon_url }}" target="_blank">
+                        <button type="button" class="btn btn-danger">Buy on Amazon</button>                        
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-4 col-sm-12">
-        <a href="{{ page.amazon_url }}" target="_blank">
-            <button type="button" class="btn btn-danger">Buy on Amazon</button>                        
-        </a>
     </div>    
 </div>
