@@ -1,31 +1,37 @@
+{% assign author = site.authors[page.author] %}
+
+<!-- Post Featured Image -->    
 <div class="row">   
-    <div class="col-xs-12 col-md-4 text-md-left">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">About this Post</h5>
-                <p class="card-text">
-                    <dt>Type</dt>
-                    <dd>{{ page.type }}</dd>
-                    </dd>
-                    <dt>Tags</dt>
-                    <dd>
-                        {% assign sorted_tags = page.tags | sort %}
-                        {% for tag in sorted_tags %}
-                        <span class="badge bg-light text-dark rounded-pill">
-                            <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">{{ tag }}</a>
-                        </span>                    
-                        {% endfor %}
-                    </dd>
-                    <dt>Summary Author</dt>
-                    <dd>
-                        {% if summary_author.avatar %}
-                        <img class="author-thumb" src="{{ summary_author.avatar }}" alt="{{ summary_author.display_name }}">
-                        {% endif %}
-                        {{ summary_author.display_name }}
-                    </dd>
-                </p>
-                <a class="card-link" href="{{ page.source_url }}" target="_blank">Source</a>                            
-            </div>
+    <div class="col-xs-12 col-md-12 text-md-left">
+        {% if page.image %}
+            {% if site.lazyimages == "enabled" %}
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% else %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+        {% endif %}
+    </div>
+</div>
+<!-- End Featured Image -->
+
+<div class="row">       
+    <div class="col-xs-12 col-md-12 text-md-left">
+        <div class="lead">Author:
+            {% if author.avatar %}
+            <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
+            {% endif %}
+            {{ author.display_name }}
         </div>
+        <div class="lead">Tags:            
+                {% assign sorted_tags = page.tags | sort %}
+                {% for tag in sorted_tags %}
+                <span class="badge bg-light text-dark rounded-pill">
+                    <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">{{ tag }}</a>
+                </span>                    
+                {% endfor %}            
+        </div>
+        {% if page.source_url %}
+        <a class="card-link" href="{{ page.source_url }}" target="_blank">Source</a>                            
+        {% endif %}                
     </div>    
 </div>

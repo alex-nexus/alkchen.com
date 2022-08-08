@@ -5,9 +5,6 @@ archive: false
 post_class: post-template
 ---
 
-{% assign summary_author = site.authors[page.summary_author] %}
-{% assign book_author = site.authors[page.book_author] %}
-
 <!-- Begin Article
 ================================================== -->
 <div class="container">
@@ -29,23 +26,14 @@ post_class: post-template
 
             <div class="mainheading">
                 <h1 class="posttitle text-capitalize">{{ page.title }}</h1>
-            </div>
-
-            <!-- Post Featured Image -->
-            {% if page.image %}
-                {% if site.lazyimages == "enabled" %}
-                <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
-                {% else %}
-                <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
-                {% endif %}
-            {% endif %}
-            <!-- End Featured Image -->
+            </div>            
 
             {% if page.layout == 'book_summary' %}
                 {% include posts/book_summary_header.html %}
-            {% else % }
+            {% else %}
                 {% include posts/post_header.html %}
             {% endif %}            
+            <hr>
 
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
             {% if site.adsense == "enabled" %}
