@@ -17,6 +17,8 @@ title: Home
                     {% include posts/card/quote.html %}
                 {% elsif post.image_type == 'tall' %}
                     {% include posts/card/tall_image.html %}
+                {% elsif post.type == 'gallery' %}
+                    {% include posts/card/gallery.html %}
                 {% else %}
                     {% include posts/card/default.html %}
                 {% endif %}
