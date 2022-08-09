@@ -1,7 +1,11 @@
 <div class="card mb-4">
     <div class="row g-0">
         <div class="col-md-6">
-            <img class="img-fluid" src="{{ post.image }}"> 
+            {% if post.image %}
+                <img class="img-fluid" src="{{ post.image }}">
+            {% else %}
+                <img class="img-fluid" src="{{ post.images[0] }}">
+            {% endif %}
         </div>
         
         <div class="col-md-6">
