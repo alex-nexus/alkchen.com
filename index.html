@@ -12,15 +12,15 @@ title: Home
     <div class="row listrecent">
         {% for post in paginator.posts %}
             {% assign author = site.data.authors[post.author] %}
-                <div class="col-md-12 mb-30px">
-                    {% if post.type == 'quote' %}
-                        {% include posts/card/quote.html %}
-                    {% elsif post.image_type == 'tall' %}
-                        {% include posts/card/tall_image.html %}
-                    {% else %}
-                        {% include posts/card/default.html %}
-                    {% endif %}
-                </div>
+            <div class="col-md-12 mb-30px">
+                {% if post.type == 'quote' %}
+                    {% include posts/card/quote.html %}
+                {% elsif post.image_type == 'tall' %}
+                    {% include posts/card/tall_image.html %}
+                {% else %}
+                    {% include posts/card/default.html %}
+                {% endif %}
+            </div>
         {% endfor %}
     </div>
 </section>
