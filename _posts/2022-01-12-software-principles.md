@@ -4,7 +4,7 @@ type: post
 title:  My Software Principles
 author: alex
 categories: [ sofware ]
-image: /assets/images/posts/principles.png
+image: /assets/images/posts/principles.jpeg
 ---
 
 ### 1. Set up continuous deployment
