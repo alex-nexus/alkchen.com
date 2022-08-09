@@ -1,0 +1,31 @@
+---
+layout: post
+title:  Some of my favorite programming jokes
+author: alex
+categories: [ software ]
+tag: [ programming, joke ]
+image: /assets/images/2.jpg
+rating: 3
+post_image_urls: ['https://i.pinimg.com/564x/e5/62/64/e5626451fafb5bc44e053f093aa0d3df.jpg', 
+'https://i.pinimg.com/564x/1e/c8/4d/1ec84d88ea73d721f4caf68d467d0a0e.jpg', 
+'https://i.pinimg.com/564x/25/7b/c2/257bc285fc47ded769cfc5bb7df5f33b.jpg',
+'https://i.pinimg.com/564x/3d/93/0e/3d930e3032e6e7b152bbd5e79f125dbd.jpg',
+'https://i.pinimg.com/564x/89/2d/03/892d03b1365ef1f6d2e9bb91ee81504e.jpg',
+'https://i.pinimg.com/564x/48/17/5d/48175d90509902b6a0891353a4e141e8.jpg',
+'https://i.pinimg.com/564x/be/0e/5d/be0e5d249d06f1aff8bac1b88e053a4f.jpg',
+'https://i.pinimg.com/564x/01/7c/68/017c686d3d31525b96ad1f3b19838696.jpg',
+'https://i.pinimg.com/564x/f0/0a/33/f00a33e8476a6c6e6c9438cde87d8bb6.jpg',
+'https://i.pinimg.com/564x/06/94/d0/0694d053ca1dca2370d8c1b20cd73bb7.jpg',
+'https://i.pinimg.com/564x/e3/d2/f1/e3d2f1862830323b2c6f77753ae6aa9c.jpg',
+'https://i.pinimg.com/564x/d6/05/65/d60565f841a124ed16e99013b351ce4e.jpg',
+'https://i.pinimg.com/564x/91/b0/9b/91b09b8971734a7c535de0b0f22f0954.jpg']
+---
+
+<div style="text-align: center;" class="my-2">
+    {% for image_url in page.post_image_urls %}
+    <div class="my-2">
+        <img class="my-2 img-thumbnail" src="{{image_url}}">
+    </div>    
+    {% endfor %}
+</div>
+
