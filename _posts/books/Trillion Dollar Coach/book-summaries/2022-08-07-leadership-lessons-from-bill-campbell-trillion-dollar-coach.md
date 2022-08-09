@@ -11,7 +11,6 @@ featured: true
 amazon_url: https://www.amazon.com/Trillion-Dollar-Coach-Leadership-Playbook/dp/0062839268/ref=sr_1_1?keywords=bill+campbell+trillion+dollar+coach&qid=1659919042&sprefix=bill+campbel%2Caps%2C166&sr=8-1
 source_url: https://medium.com/steveglaveski/leadership-lessons-from-bill-campbell-the-trillion-dollar-coach-37d5494c8be2
 image: https://images-na.ssl-images-amazon.com/images/I/41vgassjrKL.jpg
-image_type: tall
 ---
 Trillion Dollar Coach: The Leadership Playbook of Silicon Valley’s Bill Campbell was an absolutely gripping read about a legendary coach and business executive, whose mentoring of the likes of Steve Jobs, Larry Page, Eric Schmidt, and Jeff Bezos, amongst other tech luminaries, played a major role in the success of their companies.
 

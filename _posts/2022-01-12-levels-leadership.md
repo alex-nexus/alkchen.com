@@ -7,7 +7,6 @@ categories: [ leadership ]
 amazon_url: https://www.amazon.com/Levels-Leadership-Proven-Maximize-Potential/dp/1599953633/
 source_url: https://www.johnmaxwell.com/blog/the-5-levels-of-leadership1/
 image: https://images-na.ssl-images-amazon.com/images/I/41DGzSUtbNL.jpg
-image_type: tall
 ---
 
 A business executive. A softball coach. A classroom teacher. A volunteer coordinator. A parent.
