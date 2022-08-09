@@ -1,35 +1,41 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: About Me
 permalink: /about
-comments: true
 ---
 
-<div class="row justify-content-between">
-<div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+My name is Alex Chen. I am a software engineer and manager with over 15 years of experience. I have worked at the following startups and public companies:
+  - [Stitch Fix](https://www.stitchfix.com/): A subscription-based and personalized shopping site for clothing and fashion. It went IPO.
+  - [IPSY](https://www.ipsy.com/): Subscription to receive monthly bag of personalized beauty products. 3 millions subscribers that pay $10 / month. It hs close to $1 billion annual GMV and is profitable.
+  - [One Kings Lane](https://www.onekingslane.com/): Flash site for high-end home decor / furniture.\
+  - [Wanelo](https://wanelo.com/): A social ecommerce platform that allow users to collect products into boards and follow each other. 
+  - [Upwork](https://www.upwork.com/): The world's largest freelance marketplace
+  - [Facebook](https://www.facebook.com/): I worked on its integrity team for community products. We use machine learning to identify and handle violating and senstivie entites, pages, events, groups, etc. 
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+Upwork and Stitch Fix went IPO. 
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+Currently I am an engineering manager at Goodwater Capital, a VC with $2 billions AUM. You can read more about us at [here](https://www.goodwatercap.com/about/). At Goodwater Capital, we are different from typical VCs in 5 ways: 
+1. We invest in **consumer tech** around the world
+1. We use **big data** to learn and evaluate companies.
+2. We build **internal software as a product** to standardize and speed up our investment process. 
+3. We use **machine learning** to identify and priortize top companies using metrics
+4. Our software engineers, data scientists, and product managers outnumer our investors.
 
-<h4>Questions or bug reports?</h4>
+> We are hiring!
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+In my spare time, I enjoy doing the following:
+  - Think about startup ideas
+  - Prototype new product MVP
+  - Explore ways to improve my productivity
+  - Manage a few non-profit online communities
+  - Play with my son
 
-</div>
-
-<div class="col-md-4">
-
-<div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
-
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
-
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
-
-</div>
-</div>
-</div>
+I enjoy reading about the following domains
+  - Entrepreneur
+  - Investing
+  - Leadership and Management
+  - Parenting
+  - Software and Product
+  - Psychology  
+  - Spirituality / Christianity
