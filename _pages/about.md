@@ -24,6 +24,44 @@ Currently I am an engineering manager at Goodwater Capital, a VC with $2 billion
 
 > We are hiring!
 
+As a software engineer, I am comfortable with the following: 
+1. Backend: 
+  - Python(Flask, aiohttp, Django)
+  - Ruby(Rails)  
+2. Frontend: 
+  - HTML
+  - CSS
+  - Javascript
+  - Framework (Bootstrap)
+3. Machine Learning Engineering (training, scoring, regression, classification)
+4. Data engineering (BQ, Airflow, Databrick, Spark, AWS Athena, etc)
+5. Distributed Architecture and Performance Tuning
+6. Storage Technology
+  - Relational DB: Postgres, MySQL, etc
+  - NoSQL: Dynamo, Mongo, Elastic Search, S3, GCS
+  - Data warehouse: BQ, Redshift
+  - In-memory storage: Redis, Memcache 
+7. Complext Data Modeling
+8. Search Indexing and Query
+9. Serverless Technology: AWS Lambda, GCP cloud run, S3, etc
+
+I have prior experience and knowledge in the following domains: 
+1. Ecommerce (Flash Sales, Marketplace, Dropship, Social Commerce, etc)
+2. Service Marketplace
+3. Online Payment (Paypal, Marqeto, Stripe)
+3. Survey Management
+4. Short-term Rental 
+5. Online Community Integrity
+6. Internal Operation (inventory management, shipping, refund, return)
+7. User Action Tracking (Mixpanel, Google Analytics, Google Tag Manager, in-house infra)
+8. Machine Learning Application (Recommendation Engine, Ranking, etc)
+9. User Authentication and Authorization (Roles and Permissions)
+10. Web Scraping
+
+Here are some tools I have first-hand experience: 
+1. [Jekyll](https://jekyllrb.com/)
+2. [Wordpress](https://wordpress.org/)
+
 In my spare time, I enjoy doing the following:
   - Think about startup ideas
   - Prototype new product MVP
