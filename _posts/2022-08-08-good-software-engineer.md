@@ -7,11 +7,16 @@ image: /assets/images/13.jpg
 ---
 
 A great software engineer should have the following technical talents: 
-
-1. **A good problem solver** who can think clearly and break a complex problem into small modules or components and solve those components and bring them together. 
-2. **A generalist** who is not only a specialist in specific tools or languages
-3. **A handy craftsman** who has the discipline and dedication to follow good practices in writing clear codes and tests, who can debug well. 
-4. **A computer scientist** who understands computational complexity
-5. **A good communicator** who translates intentions into readable code
+1. **Fast**: Learn, code, move fast. 
+2. **Craftsman Mentality**: has the discipline and dedication to follow good practices  
+3. **Clean Codes**: Intentionally write human-readable codes
+4. **Test-Driven**: Trust tests instead of him/herself
+5. **Masterful in tools**: Always look for new ways to speed up and improve
 
 A great software engineer should have the following non-technical talents: 
+1. **A good problem solver**: Think clearly andtTurn complexity into clarity
+2. **MVP Mentality**: Build prototype quickly to show to users, and iterate rapidly based on real feedbacks.
+3. **Great execution**: break a complex problem into manageable components and milestones.
+4. Willing to understand the business and care for **business impact**
+5. Passion for **product** and empathy for **customers**
+6. **Coachable**: has growth mindset and take feedbacks well
