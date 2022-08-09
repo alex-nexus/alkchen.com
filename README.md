@@ -4,7 +4,13 @@
 
 ![mediumish](assets/images/mediumish-jekyll-template.png)
 
+### Comman
+`gcloud config set jekyll-content-site`
+`gsutil rsync -R . gs://my-static-assets`
+
+
 ### Reference
-  - how to jekyll: https://jekyllcodex.org/
-  - Markdown cheatsheet: https://www.markdownguide.org/cheat-sheet/
-  - Liquid Template: https://shopify.github.io/liquid
+  - [Jekyll Codex](https://jekyllcodex.org/)
+  - [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+  - [Liquid Template](https://shopify.github.io/liquid)
+  - [Hosting a static website on Google Cloud using Google Cloud Storage](https://medium.com/google-cloud/hosting-a-static-website-on-google-cloud-using-google-cloud-storage-ddebcdcc8d5b)
