@@ -5,13 +5,15 @@ permalink: /about
 ---
 
 
-My name is Alex Chen. I am a software engineer and manager with over 15 years of experience. I have worked at the following startups and public companies:
+My name is Alex Chen. First of all, I am a husband and a father. 
+
+Secondly, I practice my craft as a software engineer with over 15 years of experience. I am grateful that I actually find something I enjoy doing. I have the priveledge of working at the following great startups and public companies:
   - [Stitch Fix](https://www.stitchfix.com/): A subscription-based and personalized shopping site for clothing and fashion. It went IPO.
   - [IPSY](https://www.ipsy.com/): Subscription to receive monthly bag of personalized beauty products. 3 millions subscribers that pay $10 / month. It hs close to $1 billion annual GMV and is profitable.
-  - [One Kings Lane](https://www.onekingslane.com/): Flash site for high-end home decor / furniture.\
-  - [Wanelo](https://wanelo.com/): A social ecommerce platform that allow users to collect products into boards and follow each other. 
-  - [Upwork](https://www.upwork.com/): The world's largest freelance marketplace
-  - [Facebook](https://www.facebook.com/): I worked on its integrity team for community products. We use machine learning to identify and handle violating and senstivie entites, pages, events, groups, etc. 
+  - [One Kings Lane](https://www.onekingslane.com/): Flash site for high-end home decor / furniture. I was the first internal engineering hire. The year we launched the product, its reached $100M in annual GMV.
+  - [Wanelo](https://wanelo.com/): A social ecommerce platform that allow users to collect products into boards and follow each other.
+  - [Upwork](https://www.upwork.com/): The world's largest freelance marketplace.
+  - [Facebook](https://www.facebook.com/): I worked on its integrity team for community products. We use machine learning to identify and handle violating and senstivie entites, pages, events, groups, etc.
 
 Upwork and Stitch Fix went IPO. 
 
@@ -22,41 +24,43 @@ Currently I am an engineering manager at Goodwater Capital, a VC with $2 billion
 3. We use **machine learning** to identify and priortize top companies using metrics
 4. Our software engineers, data scientists, and product managers outnumer our investors.
 
-> We are hiring!
+> [We are hiring!](https://jobs.lever.co/goodwatercap)
 
 As a software engineer, I am comfortable with the following: 
 1. Backend: 
-  - Python(Flask, aiohttp, Django)
-  - Ruby(Rails)  
+  - Python(Flask, [AIOHTTP](https://docs.aiohttp.org/en/stable/), [Django](https://www.djangoproject.com/))
+  - Ruby([Rails](https://rubyonrails.org/))  
 2. Frontend: 
   - HTML
   - CSS
   - Javascript
-  - Framework (Bootstrap)
+  - Framework ([Bootstrap](https://getbootstrap.com/))
 3. Machine Learning Engineering (training, scoring, regression, classification)
-4. Data engineering (BQ, Airflow, Databrick, Spark, AWS Athena, etc)
+4. Data engineering (BQ, Airflow, Databrick, Spark, [AWS Athena](https://aws.amazon.com/athena/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc), etc)
 5. Distributed Architecture and Performance Tuning
 6. Storage Technology
   - Relational DB: Postgres, MySQL, etc
-  - NoSQL: Dynamo, Mongo, Elastic Search, S3, GCS
+  - NoSQL: Dynamo, Mongo, [Elastic Search](https://www.elastic.co/elasticsearch/), S3, GCS
   - Data warehouse: BQ, Redshift
-  - In-memory storage: Redis, Memcache 
+  - In-memory storage: [Redis](https://redis.io/), Memcache 
 7. Complext Data Modeling
 8. Search Indexing and Query
-9. Serverless Technology: AWS Lambda, GCP cloud run, S3, etc
+9. Serverless Technology: [AWS Lambda](https://aws.amazon.com/lambda/), [GCP cloud run](https://cloud.google.com/run/), S3, etc
+10. Web Scraping([Scrapy](https://scrapy.org/))
 
 I have prior experience and knowledge in the following domains: 
 1. Ecommerce (Flash Sales, Marketplace, Dropship, Social Commerce, etc)
-2. Service Marketplace
+2. Machine Learning Application (Recommendation Engine, Ranking, etc)
 3. Online Payment (Paypal, Marqeto, Stripe)
 3. Survey Management
-4. Short-term Rental 
+4. Short-term Rental
 5. Online Community Integrity
-6. Internal Operation (inventory management, shipping, refund, return)
-7. User Action Tracking (Mixpanel, Google Analytics, Google Tag Manager, in-house infra)
-8. Machine Learning Application (Recommendation Engine, Ranking, etc)
-9. User Authentication and Authorization (Roles and Permissions)
-10. Web Scraping
+6. Internal Operation (Inventory, Shipping, Tax, Refund/Return)
+7. User Action Tracking (Mixpanel, Google Analytics, [Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/), in-house infra)
+8. Service Marketplace
+9. Affiliate Marketing and SEO
+10. User Authentication and Authorization (Roles and Permissions)
+
 
 Here are some tools I have first-hand experience: 
 1. [Jekyll](https://jekyllrb.com/)
