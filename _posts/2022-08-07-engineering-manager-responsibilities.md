@@ -1,11 +1,12 @@
 ---
 layout: post
 type: post
-title:  The responsibilities of an engineering manager
+title:  The 4 functions of an engineering manager
 author: alex
 categories: [ leadership ]
 tags: [ software ]
 image: assets/images/6.jpg
+featured: true
 ---
 
 There are 4 roles that an engineering manager needs to play and play well.
