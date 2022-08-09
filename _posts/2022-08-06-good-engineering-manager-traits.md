@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  12 traits of an excellent engineering manager
+type: post
 author: alex
-categories: [ leadership ]
+categories: [ leadership, software ]
+tags: [ management ]
 image: /assets/images/posts/steve-kerr.png
 ---
 

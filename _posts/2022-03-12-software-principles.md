@@ -4,6 +4,7 @@ type: post
 title:  My Software Principles
 author: alex
 categories: [ sofware ]
+tags: [ me ]
 image: /assets/images/posts/principles.jpeg
 ---
 

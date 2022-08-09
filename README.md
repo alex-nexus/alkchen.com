@@ -5,8 +5,10 @@
 ![mediumish](assets/images/mediumish-jekyll-template.png)
 
 ### Comman
-`gcloud config set jekyll-content-site`
-`gsutil rsync -R . gs://my-static-assets`
+`gcloud auth login`
+`bundle exec jekyll build`
+`gcloud config set project jekyll-content-site`
+`gsutil rsync -R _site/ gs://www.alkchen.com`
 
 
 ### Reference
@@ -14,3 +16,4 @@
   - [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
   - [Liquid Template](https://shopify.github.io/liquid)
   - [Hosting a static website on Google Cloud using Google Cloud Storage](https://medium.com/google-cloud/hosting-a-static-website-on-google-cloud-using-google-cloud-storage-ddebcdcc8d5b)
+  - [Host a static website](https://cloud.google.com/storage/docs/hosting-static-website)

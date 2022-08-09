@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  What does a great software engineer looks like
+type: post
 author: alex
 categories: [ software ]
 image: /assets/images/13.jpg
