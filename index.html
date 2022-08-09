@@ -15,8 +15,10 @@ title: Home
             <div class="col-md-12 mb-30px">
                 {% if post.type == 'quote' %}
                     {% include posts/card/quote.html %}
-                {% elsif post.image_type == 'tall' %}
-                    {% include posts/card/tall_image.html %}
+                {% elsif post.type == 'book_summary' %}
+                    {% include posts/card/book_summary.html %}
+                {% elsif post.type == 'video' %}
+                    {% include posts/card/video.html %}
                 {% elsif post.type == 'gallery' %}
                     {% include posts/card/gallery.html %}
                 {% else %}

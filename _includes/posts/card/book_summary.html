@@ -28,7 +28,7 @@
                 <h4 class="card-title mb-4">
                     <a class="text-dark text-capitalize" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>                            
                 </h4>
-                <p class="card-text">{{ post.description | strip_html | truncatewords: 100 }}</p>
+                <p class="card-text">{{ post.content | strip_html | truncatewords: 100 }}</p>
             </div>
             
             <div class="card-footer b-0 bg-white mt-auto ms-4">
