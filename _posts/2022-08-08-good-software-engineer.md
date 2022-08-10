@@ -4,7 +4,7 @@ title:  What does a great software engineer looks like
 type: post
 author: alex
 categories: [ software ]
-tags: [ me ]
+tags: [ mine ]
 image: /assets/images/13.jpg
 ---
 

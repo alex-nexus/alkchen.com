@@ -3,7 +3,7 @@ layout: post
 type: post
 title:  My Software Principles
 author: alex
-categories: [ sofware ]
+categories: [ software ]
 tags: [ me ]
 image: /assets/images/posts/principles.jpeg
 ---

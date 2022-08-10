@@ -9,16 +9,17 @@ google_analytics: 'UA-X-1'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
-permalink: /:title/    
+permalink: /categories/:categories/:title
 
 collections:
   authors:
     # _hide_content: true
     output: true
     permalink: /:collection/:slug:output_ext
-  videos:
+  books:
     # _hide_content: true
     output: true
+    permalink: /:collection/:slug:output_ext
 
 collections:
   - books
@@ -35,9 +36,11 @@ plugins:
 jekyll-archives:
   enabled:
     - categories
-  layout: archive
+    - tags
+  layout: posts
   permalinks:
-    category: '/category/:name/'
+    category: '/categories/:name/'
+    tag: '/tags/:name/'
     
 # Pagination 
 paginate: 10
@@ -62,10 +65,3 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
-
-defaults:
-  - scope:
-      type: categories  # select all category pages
-    values:
-      layout: category
-      permalink: category/:category/

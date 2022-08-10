@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: "/posts.html"
 title: Posts
 ---
 
@@ -8,11 +7,26 @@ title: Posts
 ================================================== -->
 <section class="recent-posts">
     <div class="section-title">
-        <h2><span>All Posts</span></h2>
+        <h2>
+            <span>{{ page.type | capitalize }}: {{ page.title | capitalize }}</span>
+        </h2>
     </div>
     <div class="row listrecent">
-        {% for post in site.post %}
-            {% include books/card.html %}
+        {% for post in page.posts %}
+            {% assign author = site.data.authors[post.author] %}
+            <div class="col-md-12 mb-30px">
+                {% if post.type == 'quote' %}
+                    {% include posts/card/quote.html %}
+                {% elsif post.type == 'book_summary' %}
+                    {% include posts/card/book_summary.html %}
+                {% elsif post.type == 'video' %}
+                    {% include posts/card/video.html %}
+                {% elsif post.type == 'gallery' %}
+                    {% include posts/card/gallery.html %}
+                {% else %}
+                    {% include posts/card/default.html %}
+                {% endif %}
+            </div>
         {% endfor %}
     </div>
 </section>

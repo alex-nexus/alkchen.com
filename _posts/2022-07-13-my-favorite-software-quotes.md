@@ -4,7 +4,7 @@ title:  Some of my favorite quotes by software masters
 type: gallery
 author: alex
 categories: [ software ]
-tag: [ programming ]
+tag: [ programming, mine ]
 images: [
     'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6edf896f-e25c-4cb9-bdfc-31b485d69961/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220809T065306Z&X-Amz-Expires=86400&X-Amz-Signature=27f44ed0785d2f10c0c5063d0487acb2c73e977897398f1e7f181e3824ddc7cd&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject',
     'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d6065f30-0571-4d99-a645-f8d0628d4ff7/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220809T065524Z&X-Amz-Expires=86400&X-Amz-Signature=f6633e5623aaf7d54c26cea7c8bec93774da047ab53159d4d95eab819eb0307c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject',
