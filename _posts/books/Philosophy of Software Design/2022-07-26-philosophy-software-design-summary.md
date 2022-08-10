@@ -5,7 +5,7 @@ title:  A Philosophy of Software Design
 book_authors:  [John Ousterhout]
 author: ashishb
 categories: [ software ]
-tags: [ book, coding ]
+tags: [ book summary, coding ]
 description: "Good system designers get to spend a larger fraction of time in the design phase. Poor designers spend most of their time chasing bugs in complicated and brittle code."
 featured: true
 amazon_url: https://www.amazon.com/Philosophy-Software-Design-2nd/dp/173210221X/ref=sr_1_1?crid=175A4LGFSFC9N&keywords=A+Philosophy+of+Software+Design&qid=1659927342&sprefix=a+philosophy+of+software+design%2Caps%2C232&sr=8-1
