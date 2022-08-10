@@ -22,7 +22,7 @@ title: Home
                 {% elsif post.type == 'gallery' %}
                     {% include posts/card/gallery.html %}
                 {% else %}
-                    {% include posts/card/default.html %}
+                    {% include posts/card/article.html %}
                 {% endif %}
             </div>
         {% endfor %}
