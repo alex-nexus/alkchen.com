@@ -62,3 +62,10 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+defaults:
+  - scope:
+      type: categories  # select all category pages
+    values:
+      layout: category
+      permalink: category/:category/

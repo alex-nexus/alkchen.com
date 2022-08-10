@@ -18,3 +18,4 @@
   - [Jekyll Codex](https://jekyllcodex.org/)
   - [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
   - [Liquid Template](https://shopify.github.io/liquid)
+  - [Jekyll Generators](https://jekyllrb.com/docs/plugins/generators/)
