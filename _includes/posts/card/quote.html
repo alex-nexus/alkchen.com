@@ -3,7 +3,11 @@
         <div class="col-md-9">
             <img class="img-fluid" src="{{ post.image }}">                           
             <div class="card-img-overlay d-flex align-items-center">
-                <div class="w-75 text-center text-capitalize">{{ post.content }}</div>
+                <div class="w-75 text-center text-capitalize">
+                    {{ post.content }}                
+                    <br>
+                    <h3>- {{ author.display_name | replace: '_', ' ' | capitalize }}</h3>
+                </div>                
             </div>
         </div>
         
@@ -35,7 +39,7 @@
             </div>
         
             <div class="card-body h-50 my-4">
-                <p class="card-title mb-4 text-dark text-capitalize">{{ post.title }}</p>
+                <p class="card-title mb-4 text-dark text-capitalize">{{ post.content | strip_html }}</p>
                 <p class="card-title mb-4 text-dark text-capitalize float-end">- {{ author.display_name }}</p>
                 <div class="clearfix"></div>                    
             </div>                
