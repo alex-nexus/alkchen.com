@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  12 traits of an excellent engineering manager
-type: post
+type: article
 author: alex
 categories: [ leadership ]
 tags: [ management, mine]

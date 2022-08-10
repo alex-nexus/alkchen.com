@@ -1,6 +1,6 @@
 ---
 layout: post
-type: post
+type: article
 title:  My Software Principles
 author: alex
 categories: [ software ]

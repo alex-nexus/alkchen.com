@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  What does a great software engineer looks like
-type: post
+type: article
 author: alex
 categories: [ software ]
 tags: [ mine ]
