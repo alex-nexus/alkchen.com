@@ -12,7 +12,6 @@
         {% endif %}
     </div>    
 </div>
-<!-- End Featured Image -->
 
 <div class="row">
     <div class="col-md-8 col-sm-12">
@@ -21,11 +20,21 @@
                 <h5 class="card-title">About this Book</h5>
                 <p class="card-text"></p>
                     <dt>Author(s)</dt>
-                    <dd>                                    
-                        {{ page.book_authors | join: ", " }}                                
-                    </dd>                                
+                    <dd>    
+                        {% for site_book_author in site.book_authors %}
+                            {% if page.book_authors contains site_book_author.name %}
+                                <a href="{{site_book_author.url}}">{{ site_book_author.name }}</a>
+                            {% else %}
+                                {{ site_book_author.name }}
+                            {% endif %}
+                        {% endfor %}
+                    </dd>
+
                     <dt>Ratings</dt>
-                    <dd>{{ page.rating }}</dd>          
+                    <dd>{{ page.rating }}</dd>
+
+                    <dt>Ratings Count</dt>
+                    <dd>{{ page.ratings_count }}</dd>          
 
                     {% if page.description %}
                     <dt>Description</dt>         
