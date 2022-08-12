@@ -11,19 +11,21 @@ mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a
 include: ["_pages"]
 permalink: /categories/:categories/:title
 
+collections_dir: models
 collections:
-  authors:
-    # _hide_content: true
+  book_authors:
     output: true
-    permalink: /:collection/:slug:output_ext
+    permalink: /:collection/:name
   books:
-    # _hide_content: true
     output: true
-    permalink: /:collection/:slug:output_ext
+    permalink: /:collection/:name
+  book_chapters:
+    output: true
+    permalink: /:collection/:name
+  book_quotes:
+    output: true
+    permalink: /:collection/:name
 
-collections:
-  - books
-  
 # Plugins
 plugins:
   - jekyll-paginate

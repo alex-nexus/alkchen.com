@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+{%- assign collection_name = page.collection_name | default: include.collection_name | default: nil -%}
+{{ collection_name }}
+{%- assign target_collection = site[collection_name] -%}
+{{  target_collection.size }}
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+    <div class="section-title">
+        <h2>
+            <span>{{ page.type | capitalize }}: {{ page.name | capitalize }}</span>
+        </h2>
+    </div>
+    <div class="row listrecent">
+        {% for post in site.posts %}
+            {% if post.book_authors contains page.name %}
+                {% assign author = site.data.authors[post.author] %}
+                <div class="col-md-12 mb-30px">
+                    {% if post.type == 'quote' %}
+                        {% include posts/card/quote.html %}
+                    {% elsif post.type == 'book_summary' %}
+                        {% include posts/card/book_summary.html %}
+                    {% elsif post.type == 'video' %}
+                        {% include posts/card/video.html %}
+                    {% elsif post.type == 'gallery' %}
+                        {% include posts/card/gallery.html %}
+                    {% else %}
+                        {% include posts/card/article.html %}
+                    {% endif %}
+                </div>
+            {% endif %}            
+        {% endfor %}        
+        
+        
+    </div>
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+    <div class="pointerup">
+        <i class="fa fa-caret-up"></i>
+    </div>
+    <span class="navigation" role="navigation">
+        {% include pagination.html %}
+    </span>
+</div>
+

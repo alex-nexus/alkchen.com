@@ -3,6 +3,10 @@ layout: default
 title: Authors
 ---
 
+<div class="section-title">
+    <h1>Book Authors</h1>
+</div>
+
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
@@ -10,9 +14,9 @@ title: Authors
         <h2><span>Featured</span></h2>
     </div>
     <div class="row">
-        {% for author in site.authors %}
-            {% if author.featured == true %}
-                {% include authors/featured_card.html %}
+        {% for book_author in site.book_authors %}
+            {% if book_author.featured == true %}
+                {% include book_authors/featured_card.html %}
             {% endif %}
         {% endfor %}
     </div>
@@ -22,11 +26,13 @@ title: Authors
 ================================================== -->
 <section class="recent-posts">
     <div class="section-title">
-        <h2><span>All Authors</span></h2>
+        <h2><span>All</span></h2>
     </div>
     <div class="row listrecent">
-        {% for author in site.authors %}
-            {% include authors/card.html %}
+        {% for book_author in site.book_authors %}
+            {% if book_author.featured != true %}
+                {% include book_authors/featured_card.html %}
+            {% endif %}
         {% endfor %}
     </div>
 </section>

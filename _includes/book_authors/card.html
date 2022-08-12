@@ -4,21 +4,21 @@
 <div class="col-lg-4 col-md-6 mb-30px card-group">
     <div class="card h-100">
         <div class="maxthumb">
-            <a href="{{ site.baseurl }}{{ author.url }}">
-                {% if author.image_url %}
-                    <img class="img-fluid" src="{{ author.image_url }}" alt="{{ author.full_name }}">                     
+            <a href="{{ site.baseurl }}{{ book_author.url }}">
+                {% if book_author.image_url %}
+                    <img class="img-fluid" src="{{ book_author.image_url }}" alt="{{ book_author.full_name }}">                     
                 {% endif %}
             </a>
         </div>
         <div class="card-body">
             <h2 class="card-title">
-                <a class="text-dark" href="{{ site.baseurl }}{{ author.url }}">{{ author.full_name }}</a>                
+                <a class="text-dark" href="{{ site.baseurl }}{{ book_author.url }}">{{ book_author.name }}</a>                
             </h2>            
-            <h4 class="card-text">{{ author.introduction | strip_html | truncatewords:12 }}</h4>
+            <h4 class="card-text">{{ book_author.introduction | strip_html | truncatewords:12 }}</h4>
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
-                {% if author.rating %}
+                {% if book_author.rating %}
                 <div class="mb-2 mt-2 font-weight-normal">
                     {% include star_rating.html %}
                 </div>
