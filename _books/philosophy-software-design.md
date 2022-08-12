@@ -1,7 +1,7 @@
 ---
 title: A Philosophy of Software Design
 subtitle:
-author_name: John Ousterhout
+book_authors: [John Ousterhout]
 featured: true
 slug: philosophy-software-design
 asin: 173210221X

@@ -1,7 +1,7 @@
 ---
 title: How Successful People Think
 subtitle: Electronics Features, Dyson
-author_name: John Maxwell
+book_authors: [John Maxwell]
 featured: true
 slug: how-successful-people-think
 asin: B00199RHE8
