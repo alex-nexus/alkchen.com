@@ -2,12 +2,14 @@
 layout: post
 title:  The 5 Levels of Leadership
 type: book_summary
-authors: [john_maxwell]
+book_authors: [ John Maxwell]
 categories: [ leadership ]
 tags: [ book summary, influence ]
 amazon_url: https://www.amazon.com/Levels-Leadership-Proven-Maximize-Potential/dp/1599953633/
 source_url: https://www.johnmaxwell.com/blog/the-5-levels-of-leadership1/
 image: https://images-na.ssl-images-amazon.com/images/I/41DGzSUtbNL.jpg
+rating: 5
+ratings_count : 3436
 ---
 
 A business executive. A softball coach. A classroom teacher. A volunteer coordinator. A parent.
