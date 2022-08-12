@@ -1,5 +1,5 @@
 ---
-full_name: John Ousterhout
+name: John Ousterhout
 image_url: https://upload.wikimedia.org/wikipedia/commons/5/59/Ouster_face.png
 category: software
 slug: john-ousterhout
