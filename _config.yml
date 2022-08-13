@@ -18,13 +18,7 @@ collections:
     permalink: /:collection/:name
   books:
     output: true
-    permalink: /:collection/:name
-  book_chapters:
-    output: true
-    permalink: /:collection/:name
-  book_quotes:
-    output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:title  
 
 # Plugins
 plugins:
@@ -38,11 +32,11 @@ plugins:
 jekyll-archives:
   enabled:
     - categories
-    - tags
-  layout: posts
+    - tags  
   permalinks:
     category: '/categories/:name/'
     tag: '/tags/:name/'
+  layout: posts
     
 # Pagination 
 paginate: 10

@@ -1,4 +1,4 @@
-module SamplePlugin
+module Plugin
     class TagPageGenerator < Jekyll::Generator
       safe true
   

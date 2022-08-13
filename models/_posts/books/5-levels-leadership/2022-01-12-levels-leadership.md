@@ -2,9 +2,10 @@
 layout: post
 title:  The 5 Levels of Leadership
 type: book_summary
+book: The 5 Levels of Leadership
 book_authors: [ John Maxwell]
 poster: john_maxwell
-categories: [ leadership ]
+category: leadership
 tags: [ book summary, influence ]
 amazon_url: https://www.amazon.com/Levels-Leadership-Proven-Maximize-Potential/dp/1599953633/
 source_url: https://www.johnmaxwell.com/blog/the-5-levels-of-leadership1/

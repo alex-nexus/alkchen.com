@@ -1,4 +1,4 @@
-module SamplePlugin
+module Plugin
     class CategoryPageGenerator < Jekyll::Generator
       safe true
   
