@@ -45,6 +45,24 @@
                 <p class="card-title mb-4 text-dark text-capitalize float-end">- {{ post.author }}</p>
                 <div class="clearfix"></div>                    
             </div>                
+            <div class="card-footer b-0 bg-white mt-auto">
+                <div class="wrapfooter">
+                    <span class="meta-footer-thumb">
+                        {% if poster.avatar_file %}
+                        <img class="author-thumb" src="{{site.baseurl}}/{{ poster.avatar_file }}">
+                        {% elsif poster.avatar_url %}
+                        <img class="author-thumb" src="{{ poster.avatar_url }}">
+                        {% endif %}
+                    </span>
+                    <span class="author-meta">
+                        <span class="post-name">{{ poster.display_name }}</span>
+                    </span>
+                    <br/>
+                    
+                    <span class="post-date">{{ post.date | date_to_string }}</span>                    
+                    <div class="clearfix"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
