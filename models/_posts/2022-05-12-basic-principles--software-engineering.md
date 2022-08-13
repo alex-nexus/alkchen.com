@@ -3,6 +3,7 @@ layout: post
 title:  4 Basic Principles of Software Engineering
 type: article
 author: agile_actors
+poster: alex
 categories: [ software ]
 image: /assets/images/posts/4-sofware-principles.png
 rating: .5

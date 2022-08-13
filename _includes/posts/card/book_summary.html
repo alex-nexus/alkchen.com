@@ -1,3 +1,5 @@
+{% assign poster = site.data.posters[post.poster] %}
+
 <div class="card mb-4">
     <div class="row g-0">
         <div class="col-md-3">
@@ -42,19 +44,17 @@
             
             <div class="card-footer b-0 bg-white mt-auto ms-4">
                 <div class="wrapfooter">
-                    {% if post.author %}
-                        <span class="meta-footer-thumb">
-                            {% if author.avatar_file %}
-                            <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar_file }}" alt="{{ author.display_name }}">
-                            {% elsif author.avatar_url %}
-                            <img class="author-thumb" src="{{ author.avatar_url }}" alt="{{ author.display_name }}">
-                            {% endif %}
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name">{{ author.display_name }}</span>
-                        </span>
-                        <br/>
-                    {% endif %}
+                    <span class="meta-footer-thumb">
+                        {% if poster.avatar_file %}
+                        <img class="author-thumb" src="{{site.baseurl}}/{{ poster.avatar_file }}" alt="{{ poster.display_name }}">
+                        {% elsif poster.avatar_url %}
+                        <img class="author-thumb" src="{{ poster.avatar_url }}" alt="{{ poster.display_name }}">
+                        {% endif %}
+                    </span>
+                    
+                    <span class="author-meta">
+                        <span class="post-name">{{ poster.display_name }}</span>
+                    </span>
                     
                     <span class="post-date">{{ post.date | date_to_string }}</span>                                    
                     <div class="clearfix"></div>

@@ -2,7 +2,7 @@
 layout: video
 type: video
 title:  Mastery | Robert Greene | Talks at Google
-author: alex
+poster: alex
 categories: [ productivity ]
 tags: [ youtube, book, video ]
 youtube_url: https://www.youtube.com/embed/J4v_34RRCeE

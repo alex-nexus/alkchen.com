@@ -3,7 +3,7 @@ layout: post
 type: book_summary
 title: Leadership Lessons from Bill Campbell, the Trillion Dollar Coach
 book_authors: [ Eric Schmidt, Jonathan Rosenberg, Alan Eagle ]
-author: sglaveski
+poster: sglaveski
 categories: [ leadership ]
 tags: [ book summary, coaching ]
 description: Bill Campbell played an instrumental role in the growth of several prominent companies, such as Google, Apple, and Intuit, fostering deep relationships with Silicon Valley visionaries, including Steve Jobs, Larry Page, and Eric Schmidt. Trillion Dollar Coach explains the Coach’s principles and illustrates them with stories from the many great people and companies with which he worked. 

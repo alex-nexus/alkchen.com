@@ -1,5 +1,4 @@
-{% assign author = site.data.authors[page.author] %}
-{% assign book_author = site.authors[page.book_author] %}
+{% assign poster = site.data.posters[page.poster] %}
 
 <!-- Post Featured Image -->    
 <div class="row mb-4">   
@@ -21,20 +20,24 @@
                 <p class="card-text"></p>
                     <dt>Author(s)</dt>
                     <dd>    
-                        {% for site_book_author in site.book_authors %}
-                            {% if page.book_authors contains site_book_author.name %}
-                                <a href="{{site_book_author.url}}">{{ site_book_author.name }}</a>
+                        {% for book_author in page.book_authors %}
+                            {% if site.book_authors contains book_author%}
+                                <div><a href="{{site_book_author.url}}">{{ site_book_author.name }}</a></div>
                             {% else %}
-                                {{ site_book_author.name }}
-                            {% endif %}
+                                <div>{{ book_author }}</div>
+                            {% endif %}                                                    
                         {% endfor %}
                     </dd>
 
+                    {% if page.rating %}
                     <dt>Ratings</dt>
                     <dd>{{ page.rating }}</dd>
+                    {% endif %}
 
+                    {% if page.ratings_count %}
                     <dt>Ratings Count</dt>
-                    <dd>{{ page.ratings_count }}</dd>          
+                    <dd>{{ page.ratings_count }}</dd>
+                    {% endif %}
 
                     {% if page.description %}
                     <dt>Description</dt>         
@@ -52,14 +55,14 @@
                 <p class="card-text">
                     <dt>Date</dt>
                     <dd>{{ page.date | date_to_string}}</dd>
-                    <dt>Author</dt>
+                    <dt>Poster</dt>
                     <dd>
                         {% if author.avatar_file %}
-                        <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar_file }}" alt="{{ author.display_name }}">
-                        {% elsif author.avatar_url %}
-                        <img class="author-thumb" src="{{ author.avatar_url }}" alt="{{ author.display_name }}">
+                        <img class="author-thumb" src="{{site.baseurl}}/{{ poster.avatar_file }}">
+                        {% elsif poster.avatar_url %}
+                        <img class="author-thumb" src="{{ poster.avatar_url }}">
                         {% endif %}
-                        {{ author.display_name }}
+                        {{ poster.display_name }}
                     </dd>
                     <dt>Tags</dt>
                     <dd>

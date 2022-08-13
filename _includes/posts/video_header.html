@@ -1,4 +1,4 @@
-{% assign author = site.data.authors[page.author] %}
+{% assign poster = site.data.posters[page.poster] %}
 
 <!-- Post Featured Image -->    
 <div class="row">   
@@ -16,13 +16,13 @@
 
 <div class="row">
     <div class="col-xs-12 col-md-12 text-md-left">
-        <div class="lead">Author:
-            {% if author.avatar_file %}
-            <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar_file }}" alt="{{ author.display_name }}">
-            {% elsif author.avatar_url %}
-            <img class="author-thumb" src="{{ author.avatar_url }}" alt="{{ author.display_name }}">
+        <div class="lead">Poster:
+            {% if poster.avatar_file %}
+            <img class="author-thumb" src="{{site.baseurl}}/{{ poster.avatar_file }}">
+            {% elsif poster.avatar_url %}
+            <img class="author-thumb" src="{{ poster.avatar_url }}">
             {% endif %}
-            {{ author.display_name }}
+            {{ poster.display_name }}
         </div>
         <div class="lead">Date:
             {{ page.date | date_to_string }}

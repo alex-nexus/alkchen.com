@@ -7,12 +7,11 @@ title: Home
 ================================================== -->
 <section class="recent-posts">
     <div class="section-title">
-        <h2><span>All</span></h2>
+        <h2><span>{{ page.title }}</span></h2>
     </div>
     <div class="row listrecent">
         {% for post in paginator.posts %}
-            {% assign author = site.data.authors[post.author] %}
-            <div class="col-md-12 mb-30px">
+            <div class="col-md-12 mb-30px">                
                 {% if post.type == 'quote' %}
                     {% include posts/card/quote.html %}
                 {% elsif post.type == 'book_summary' %}

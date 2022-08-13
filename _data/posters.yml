@@ -1,33 +1,24 @@
 alex:
-  name: Alex
   display_name: AC
   avatar_file: assets/images/avatar.jpeg
   description: "Author of this website"
 bill_campbell:
-  name: Bill Campbell
   display_name: Bill Campbell
 ashishb:
-  name: Ashishb
   display_name: ASHI
   web: https://ashishb.net/
   description: "Author"
 sglaveski:
-  name: Steve Glaveski
   display_name: Steve Glaveski
   avatar_url: https://miro.medium.com/fit/c/88/88/1*X4C0i2lwN4YvU6ntNbadXg.png
   web: https://medium.com/@glaveski
 agile_actors:
-  name: Agile Actors
   display_name: Agile Actors
   avatar_url: https://miro.medium.com/fit/c/176/176/1*o2gqK5A6W3k5ztjF679Q7A.png
   web: https://medium.com/@agileactors
-# john_maxwell:
-#   name: John Maxwell
-#   display_name: John Maxwell
-#   web: https://www.maxwellleadership.com/
 ben_horowitz:
-  name: Ben Horowitz
   display_name: Ben Horowitz
   web: https://a16z.com/author/ben-horowitz/
-# john_ousterhout:
-#   display_name: John Ousterhout
+john_maxwell:
+  display_name: John Maxwell
+  web: https://www.maxwellleadership.com/
