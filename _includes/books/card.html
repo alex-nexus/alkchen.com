@@ -12,7 +12,7 @@
             <h5 class="card-title text-dark text-capitalize text-decoration-none">{{ book.title }}</h5>
             <p class="card-text">
                 {{ book.tagline }}
-                <h6>by {{ book.book_authors | join: ", " }}</h6>
+                <h6>by {{ book.authors | join: ", " }}</h6>
                 {% if book.rating %}
                     <div class="mb-2 mt-2 font-weight-normal">
                         {% include star_rating.html %}

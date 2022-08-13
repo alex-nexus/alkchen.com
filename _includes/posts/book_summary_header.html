@@ -20,11 +20,11 @@
                 <p class="card-text"></p>
                     <dt>Author(s)</dt>
                     <dd>    
-                        {% for book_author in page.book_authors %}
-                            {% if site.book_authors contains book_author%}
-                                <div><a href="{{site_book_author.url}}">{{ site_book_author.name }}</a></div>
+                        {% for author in page.authors %}
+                            {% if site.authors contains author%}
+                                <div><a href="{{site_author.url}}">{{ site_author.name }}</a></div>
                             {% else %}
-                                <div>{{ book_author }}</div>
+                                <div>{{ author }}</div>
                             {% endif %}                                                    
                         {% endfor %}
                     </dd>

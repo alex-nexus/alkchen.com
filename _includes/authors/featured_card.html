@@ -5,8 +5,8 @@
             <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
                 <div class="h-100">
                     <div class="wrapthumbnail">
-                        <a href="{{ site.baseurl }}{{ book_author.url }}">
-                            <img class="featured-box-img-cover" src="{{ book_author.image_url }}">
+                        <a href="{{ site.baseurl }}{{ author.url }}">
+                            <img class="featured-box-img-cover" src="{{ author.image_url }}">
                         </a>
                     </div>
                 </div>
@@ -16,9 +16,9 @@
                     <div class="card">
                         <div class="card-body">
                             <h2 class="card-title">
-                                <a class="text-dark" href="{{ site.baseurl }}{{ book_author.url }}">{{ book_author.name }}</a>                                
+                                <a class="text-dark" href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>                                
                             </h2>
-                            <h4 class="card-text">{{ book_author.introduction | strip_html | truncatewords:15 }}</h4>
+                            <h4 class="card-text">{{ author.introduction | strip_html | truncatewords:15 }}</h4>
                         </div>
                         <div class="card-footer b-0 bg-white mt-auto">
                             <div class="wrapfooter">

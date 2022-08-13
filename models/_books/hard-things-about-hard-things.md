@@ -2,7 +2,7 @@
 layout: book
 title: The Hard Thing About Hard Things
 tagline: Building a Business When There Are No Easy Answers
-book_authors: [ Ben Horowitz ]
+authors: [ Ben Horowitz ]
 tags: [featured]
 amazon_url: https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205/
 categories: [ entrepreneur ]

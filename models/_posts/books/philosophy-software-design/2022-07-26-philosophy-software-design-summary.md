@@ -3,7 +3,7 @@ layout: post
 type: book_summary
 title:  A Philosophy of Software Design
 book: A Philosophy of Software Design
-book_authors:  [John Ousterhout]
+authors:  [John Ousterhout]
 poster: ashishb
 category: software
 tags: [ book summary, coding, featured]

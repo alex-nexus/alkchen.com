@@ -1,7 +1,7 @@
 ---
 layout: book
 title: A Philosophy of Software Design
-book_authors: [John Ousterhout]
+authors: [John Ousterhout]
 amazon_url: https://www.amazon.com/Philosophy-Software-Design-2nd/dp/173210221X
 categories: [ software ]
 tags: [ coding ]

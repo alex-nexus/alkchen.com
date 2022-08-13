@@ -13,7 +13,7 @@ permalink: /categories/:categories/:title
 
 collections_dir: models
 collections:
-  book_authors:
+  authors:
     output: true
     permalink: /:collection/:name
   books:
