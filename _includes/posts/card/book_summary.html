@@ -19,7 +19,7 @@
                 </a>
                 {% endfor %}
                 
-                {% assign sorted_tags = post.tags | sort %}
+                {% assign sorted_tags = post.tags | compact | sort %}
                 {% for tag in sorted_tags %}
                 <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">
                     <span class="badge rounded-pill bg-secondary text-capitalize">{{ tag }}</span>

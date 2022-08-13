@@ -1,19 +1,13 @@
 ---
+layout: book
 title: A Philosophy of Software Design
 subtitle:
 book_authors: [John Ousterhout]
-featured: true
-slug: philosophy-software-design
-asin: 173210221X
 amazon_url: https://www.amazon.com/Philosophy-Software-Design-2nd/dp/173210221X
-category: Software
-amzn_review_count: 962
-amzn_review_avg: 4.5
-store: Amazon
-external_image_uid: 519D2u0o1EL
-external_image_url: https://m.media-amazon.com/images/I/519D2u0o1EL.jpg
-tags: Amazon
-videos_count: 0
-videos:
-created_at: 2022-07-26
+categories: [ software ]
+tags: [ coding ]
+raings_count: 995
+rating: 4.5
+image: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1531857377l/39996759.jpg
+description: "Good system designers get to spend a larger fraction of time in the design phase. Poor designers spend most of their time chasing bugs in complicated and brittle code."
 ---

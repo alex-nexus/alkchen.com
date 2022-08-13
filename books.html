@@ -1,20 +1,24 @@
 ---
 layout: default
-title: Authors
+title: Books
 ---
+
+<div class="section-title">
+    <h1>Books</h1>
+</div>
 
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
     <div class="section-title">
-        <h2><span>Featured Books</span></h2>
+        <h2><span>Featured</span></h2>
     </div>
     <div class="row">
         {% for book in site.books %}
             {% if book.featured == true %}
-                {% include books/featured_card.html %}
+                {% include books/card.html %}                
             {% endif %}
-        {% endfor %}
+        {% endfor %}        
     </div>
 </section>
 
@@ -22,11 +26,13 @@ title: Authors
 ================================================== -->
 <section class="recent-posts">
     <div class="section-title">
-        <h2><span>All Books</span></h2>
+        <h2><span>All</span></h2>
     </div>
     <div class="row listrecent">
-        {% for book in site.books %}
-            {% include books/card.html %}
+        {% for book in site.books %}            
+            {% if book.featured != true %}
+                {% include books/card.html %}                
+            {% endif %}
         {% endfor %}
     </div>
 </section>
@@ -41,4 +47,3 @@ title: Authors
         {% include pagination.html %}
     </span>
 </div>
-

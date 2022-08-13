@@ -1,26 +1,24 @@
 <!-- begin post -->
 {% assign book = site.books[post.book] %}
 
-<div class="col-lg-4 col-md-6 card-group">
+<div class="col-lg-3 col-md-6 card-group">
     <div class="card h-100 py-1">
         <div class="maxthumb">
             <a href="{{ site.baseurl }}{{ book.url }}">
-                {% if book.external_image_url %}
-                    <img class="rounded mx-auto d-block" style="height: 100%; width: auto;" src="{{ book.external_image_url }}" alt="{{ book.title }}">                     
-                {% endif %}
+                <img class="rounded mx-auto d-block" style="height: 100%; width: auto;" src="{{ book.image }}" alt="{{ book.title }}">   
             </a>
         </div>
         <div class="card-body">
-            <p class="card-title">
-                <a class="text-dark" href="{{ site.baseurl }}{{ book.url }}">{{ book.title }}</a>
-            </p>            
-            <p>By <a href="{{ site.baseurl }}{{ book.author.url }}">{{ book.author_name }}</a></p>            
-            <p class="card-text">{{ book.introduction | strip_html | truncatewords:12 }}</p>
-            {% if book.amzn_review_avg %}
-                <div class="mb-2 mt-2 font-weight-normal">
-                    {% include star_rating.html %}
-                </div>
-            {% endif %}
+            <h5 class="card-title text-dark text-capitalize text-decoration-none">{{ book.title }}</h5>
+            <p class="card-text">
+                {{ book.tagline }}
+                <h6>by {{ book.book_authors | join: ", " }}</h6>
+                {% if book.rating %}
+                    <div class="mb-2 mt-2 font-weight-normal">
+                        {% include star_rating.html %}
+                    </div>
+                {% endif %}
+            </p>                    
             <div class="clearfix"></div>                                            
         </div>        
     </div>
