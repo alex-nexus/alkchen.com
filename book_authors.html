@@ -15,7 +15,7 @@ title: Authors
     </div>
     <div class="row">
         {% for book_author in site.book_authors %}
-            {% if book_author.featured == true %}
+            {% if book_author.tags contains 'featured' %}
                 {% include book_authors/featured_card.html %}
             {% endif %}
         {% endfor %}
@@ -30,9 +30,9 @@ title: Authors
     </div>
     <div class="row listrecent">
         {% for book_author in site.book_authors %}
-            {% if book_author.featured != true %}
+            {% unless book_author.tags contains 'featured' %}
                 {% include book_authors/featured_card.html %}
-            {% endif %}
+            {% endunless %}
         {% endfor %}
     </div>
 </section>

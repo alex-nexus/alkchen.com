@@ -13,7 +13,7 @@ layout: default
     <div class="row listrecent">
         {% for post in page.posts %}
             {% assign author = site.data.authors[post.author] %}
-            <div class="col-md-12 mb-30px">
+            <div class="col-md-12 mb-20px">
                 {% if post.type == 'quote' %}
                     {% include posts/card/quote.html %}
                 {% elsif post.type == 'book_summary' %}

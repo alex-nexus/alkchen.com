@@ -6,12 +6,11 @@ book: The Hard Thing About Hard Things
 book_authors: [Ben Horowitz]
 poster: ashishb
 categories: [ entrepreneur, software ]
-tags: [ CEO, book summary ]
+tags: [ CEO, book summary, featured ]
 image: https://images-na.ssl-images-amazon.com/images/I/51NCFyHpkxL.jpg
 amazon_url: https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205/
 source_url: https://ashishb.net/book-summary/book-summary-hard-things-about-hard-things-by-ben-horowitz/
 rating: 4.5
-featured: true
 ---
 The book is Ben Horowitz’s memoir with a particular focus on his company Opsware and the lessons he learned there.
 

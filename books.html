@@ -15,7 +15,7 @@ title: Books
     </div>
     <div class="row">
         {% for book in site.books %}
-            {% if book.featured == true %}
+            {% if book.tags contains 'featured' %}
                 {% include books/card.html %}                
             {% endif %}
         {% endfor %}        
@@ -30,9 +30,9 @@ title: Books
     </div>
     <div class="row listrecent">
         {% for book in site.books %}            
-            {% if book.featured != true %}
+            {% unless book.tags contains 'featured' %}
                 {% include books/card.html %}                
-            {% endif %}
+            {% endunless %}
         {% endfor %}
     </div>
 </section>
