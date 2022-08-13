@@ -2,7 +2,7 @@
 layout: author
 type: author
 name: John Maxwell
-image_url: https://m.media-amazon.com/images/I/51V22f4HTTL._SX450_.jpg
+image_url: https://m.media-amazon.com/images/I/51V22f4HTTL.jpg
 category: leadership
 rating: 5
 featured: true

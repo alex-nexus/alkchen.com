@@ -1,3 +1,17 @@
+### Data model
+  - The site has many categories and tags
+  - The site has many authors
+  - An author has many books
+  - A book can have many posts (book)
+    - many quotes
+    - many summary
+    - many videos
+  - All contents are posts
+    - A post has one of the types: quote, video, gallery, article
+    - A post can have tags, categories
+    - A post can be about an author
+    - A post can be about a book
+
 ### Command
 
 `gcloud auth login`
