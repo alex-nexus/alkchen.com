@@ -4,7 +4,11 @@
     <div class="row g-0">
         <div class="col-md-6">
             <a href="{{ site.baseurl }}{{ post.url }}">
-                <img class="img-fluid" src="{{ post.image }}">
+                {% if post.image %}
+                    <img class="img-fluid" src="{{ post.image }}">
+                {% else %}
+                    <img class="img-fluid" src="{{ post.images[0] }}">
+                {% endif %}
             </a>
         </div>
         

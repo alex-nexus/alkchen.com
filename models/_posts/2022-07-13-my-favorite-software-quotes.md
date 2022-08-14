@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Some of my favorite quotes by software masters
-type: gallery
 author: alex
 poster: alex
 categories: [ software ]

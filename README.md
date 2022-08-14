@@ -7,7 +7,7 @@
     - many summary
     - many videos
   - All contents are posts
-    - A post has one of the types: quote, video, gallery, article
+    - A post has one of the types: quote, video, article
     - A post can have tags, categories
     - A post can be about an author
     - A post can be about a book

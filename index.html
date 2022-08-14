@@ -11,7 +11,7 @@ title: Home
     </div>
     <div class="row">
         {% for post in paginator.posts %}
-            <div class="col-md-12 mb-4">
+            <div class="col-md-12 mb-2">
                 {% if post.type == 'book_summary' %}
                     {% include posts/card/book_summary.html %}
                 
@@ -20,8 +20,6 @@ title: Home
                 
                 {% elsif post.type == 'video' %}
                     {% include posts/card/video.html %}
-                {% elsif post.type == 'gallery' %}
-                    {% include posts/card/gallery.html %}
                 {% else %}
                     {% include posts/card/article.html %}
                 {% endif %}

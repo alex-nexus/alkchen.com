@@ -18,8 +18,6 @@ layout: default
                         {% include posts/card/book_summary.html %}
                     {% elsif post.type == 'video' %}
                         {% include posts/card/video.html %}
-                    {% elsif post.type == 'gallery' %}
-                        {% include posts/card/gallery.html %}
                     {% else %}
                         {% include posts/card/article.html %}
                     {% endif %}
