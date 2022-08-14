@@ -2,13 +2,13 @@
 
 <div class="card mb-4">
     <div class="row g-0">
-        <div class="col-md-3">
+        <div class="col-md-6">
             <a href="{{ site.baseurl }}{{ post.url }}">
                 <img class="img-fluid" src="{{ post.image }}">                           
             </a>
         </div>
         
-        <div class="col-md-9">
+        <div class="col-md-6">
             <div class="card-header">
                 <span class="badge rounded-pill bg-primary text-capitalize">{{ post.type | replace: "_", " " }}</span>                        
                 
@@ -39,7 +39,7 @@
                 <h4 class="card-title mb-4">
                     <a class="text-dark text-capitalize" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>                            
                 </h4>
-                <p class="card-text">{{ post.description | strip_html | truncatewords: 100 }}</p>
+                <p class="card-text">{{ post.description | strip_html | truncatewords: 30 }}</p>
             </div>
             
             <div class="card-footer b-0 bg-white mt-auto ms-4">

@@ -9,7 +9,6 @@ google_analytics: 'UA-X-1'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
-permalink: /categories/:categories/:title
 
 collections_dir: models
 collections:
@@ -40,7 +39,7 @@ jekyll-archives:
     
 # Pagination 
 paginate: 10
-paginate_path: /page/:num/
+paginate_path: /p/:num
     
 # Other
 markdown: kramdown
