@@ -1,15 +1,19 @@
 {% assign poster = site.data.posters[post.poster] %}
 
-<div class="card mb-4 {{ post.text_type }}">
+<div class="card {{ post.text_type }}">
     <div class="row g-0">
         <div class="col-md-9">
-            <img class="img-fluid" src="{{ post.image }}">                           
-            <div class="card-img-overlay d-flex align-items-center">
-                <div class="w-75 text-center text-capitalize">
-                    {{ post.content }}                
-                    <br>
-                    <h3>- {{ post.author | replace: '_', ' ' | capitalize }}</h3>
-                </div>                
+            <div class="h-100">
+                <div class="wrapthumbnail">
+                    <img class="img-fluid" src="{{ post.image }}">                           
+                    <div class="card-img-overlay d-flex align-items-center">
+                        <div class="w-75 text-center text-capitalize text-white">
+                            {{ post.content }}                
+                            <br>
+                            <h3>- {{ post.author | replace: '_', ' ' | capitalize }}</h3>
+                        </div>                
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -39,12 +43,12 @@
                     </div>                    
                 {% endif %}        
             </div>
-        
+            
             <div class="card-body h-50 my-4">
                 <p class="card-title mb-4 text-dark text-capitalize">{{ post.content | strip_html }}</p>
                 <p class="card-title mb-4 text-dark text-capitalize float-end">- {{ post.author }}</p>
                 <div class="clearfix"></div>                    
-            </div>
+            </div>            
 
             <div class="card-footer b-0 bg-white mt-auto">
                 <div class="wrapfooter">
@@ -56,7 +60,7 @@
                         {% endif %}
                     </span>
                     <span class="author-meta">
-                        <span class="post-name">{{ poster.display_name }}</span>
+                        <span class="post-name text-dark">{{ poster.display_name }}</span>
                     </span>
                     <br/>
                     
