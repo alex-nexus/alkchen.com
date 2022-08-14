@@ -25,15 +25,23 @@ post_class: post-template
                 <span class="badge rounded-pill bg-secondary text-capitalize">{{ post.type | replace: "_", " " }}</span>
                 <h1 class="posttitle text-capitalize">{{ page.title }}</h1>
                 {% include reading-time.html %}
-            </div>            
-                    
-            {% if page.type == 'book_summary' %}
-                {% include posts/book_summary_header.html %}
-            {% elsif page.type == 'video' %}
-                {% include posts/video_header.html %}
-            {% else %}
-                {% include posts/article_header.html %}
+            </div>
+
+            <!-- Post Featured Image -->    
+            <div class="row">   
+                <div class="col-xs-12 offset-md-2 col-md-8">
+                    {% if page.image %}
+                    <img class="img-fluid w-100" src="{{ page.image }}">
+                    {% endif %}
+                </div>
+            </div>
+            <!-- End Featured Image -->                    
+
+            {% if page.book %}            
+                {% include posts/book_header.html %}
             {% endif %}
+
+            {% include posts/article_header.html %}
             <hr>
 
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->

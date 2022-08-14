@@ -1,15 +1,5 @@
 {% assign author = site.data.posters[page.poster] %}
 
-<!-- Post Featured Image -->    
-<div class="row">   
-    <div class="col-xs-12 col-md-12 text-md-left">
-        {% if page.image %}
-        <img class="img-fluid w-100" src="{{ page.image }}">
-        {% endif %}
-    </div>
-</div>
-<!-- End Featured Image -->
-
 <div class="row mt-4">       
     <div class="col-xs-12 col-md-12 text-md-left">
         <div class="lead">Author:
@@ -23,18 +13,27 @@
         <div class="lead">Date:
             {{ page.date | date_to_string }}
         </div>
-        {% if page.tags != null %}
-        <div class="lead">Tags:            
-                {% assign sorted_tags = page.tags | sort %}
-                {% for tag in sorted_tags %}
-                <span class="badge bg-light text-dark rounded-pill">
-                    <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">{{ tag }}</a>
-                </span>                    
-                {% endfor %}            
-        </div>
-        {% endif %}
+       
         {% if page.source_url %}
-        <a class="card-link" href="{{ page.source_url }}" target="_blank">Source</a>                            
+            <a class="card-link" href="{{ page.source_url }}" target="_blank">Source</a>                            
         {% endif %}                
+        
+        {% if page.description %}
+            <div class="lead">Description:
+                {{ page.description }}
+            </div>
+        {% endif %}
+        
+        {% if page.tags != null %}
+            <div class="lead">
+                    Tags: 
+                    {% assign sorted_tags = page.tags | sort %}
+                    {% for tag in sorted_tags %}
+                    <span class="badge bg-light text-dark rounded-pill">
+                        <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">{{ tag }}</a>
+                    </span>
+                    {% endfor %}
+            </div>
+        {% endif %}
     </div>    
 </div>
