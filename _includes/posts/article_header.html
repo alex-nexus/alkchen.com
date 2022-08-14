@@ -13,11 +13,7 @@
         <div class="lead">Date:
             {{ page.date | date_to_string }}
         </div>
-       
-        {% if page.source_url %}
-            <a class="card-link" href="{{ page.source_url }}" target="_blank">Source</a>                            
-        {% endif %}                
-        
+           
         {% if page.description %}
             <div class="lead">Description:
                 {{ page.description }}
@@ -34,6 +30,10 @@
                     </span>
                     {% endfor %}
             </div>
+        {% endif %}
+
+        {% if page.source_url %}
+            <a class="card-link" href="{{ page.source_url }}" target="_blank">Source</a>                            
         {% endif %}
     </div>    
 </div>

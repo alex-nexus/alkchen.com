@@ -4,7 +4,11 @@
     <div class="row g-0">
         <div class="col-md-6">
             <a href="{{ site.baseurl }}{{ post.url }}">
-                <img class="img-fluid" src="{{ post.image }}">                           
+                {% if post.image %}
+                    <img class="img-fluid" src="{{ post.image }}">
+                {% else %}
+                    <img class="img-fluid" src="{{ post.images[0] }}">
+                {% endif %}
             </a>
         </div>
         
@@ -14,7 +18,7 @@
                 
                 {% assign sorted_categories = post.categories | compact | sort %}
                 {% for category in sorted_categories %}
-                <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">
+                <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}" target="_blank">
                     <span class="badge rounded-pill bg-danger text-capitalize">{{ category }}</span>
                 </a>
                 {% endfor %}
@@ -39,7 +43,8 @@
                 <h4 class="card-title mb-4">
                     <a class="text-dark text-capitalize" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>                            
                 </h4>
-                <p class="card-text">{{ post.description | strip_html | truncatewords: 30 }}</p>
+                {% assign short_description = post.description or post.content %}
+                <p class="card-text">{{ short_description | strip_html | truncatewords: 30 }}</p>
             </div>
             
             <div class="card-footer b-0 bg-white mt-auto ms-4">
@@ -58,7 +63,7 @@
                         <br/>
                     {% endif %}
                     
-                    <span class="post-date">{{ post.date | date_to_string }}</span>                                    
+                    <span class="post-date">{{ post.date | date_to_string }}</span>
                     <div class="clearfix"></div>
                 </div>
             </div>

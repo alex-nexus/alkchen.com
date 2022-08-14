@@ -21,12 +21,12 @@ collections:
 
 # Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-archives
-    
+  - jekyll-feed
+  - jekyll-paginate  
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 # Archives
 jekyll-archives:
   enabled:
