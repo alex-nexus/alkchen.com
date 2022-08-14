@@ -26,19 +26,18 @@ post_class: post-template
                 <h1 class="posttitle text-capitalize">{{ page.title }}</h1>
                 {% include reading-time.html %}
             </div>
-
-            <!-- Post Featured Image -->    
-            <div class="row">   
-                <div class="col-xs-12 offset-md-2 col-md-8">
-                    {% if page.image %}
-                    <img class="img-fluid w-100" src="{{ page.image }}">
-                    {% endif %}
-                </div>
-            </div>
-            <!-- End Featured Image -->                    
-
+            
+            
             {% if page.book %}            
                 {% include posts/book_header.html %}
+            {% else %}
+                <div class="row">   
+                    <div class="col-xs-12 offset-md-2 col-md-8">
+                        {% if page.image %}
+                        <img class="img-fluid w-100" src="{{ page.image }}">
+                        {% endif %}
+                    </div>
+                </div>            
             {% endif %}
 
             {% include posts/article_header.html %}

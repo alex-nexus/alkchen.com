@@ -1,38 +1,39 @@
-{% assign poster = site.data.posters[page.poster] %}
-
-<div class="row">
-    <div class="col-md-8 col-sm-12">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">About this Book</h5>
-                <p class="card-text"></p>
-                    <dt>Author(s)</dt>
-                    <dd>    
-                        {% for author in page.authors %}
-                            {% if site.authors contains author%}
-                                <div><a href="{{site_author.url}}">{{ site_author.name }}</a></div>
-                            {% else %}
-                                <div>{{ author }}</div>
-                            {% endif %}                                                    
+{% for book in site.books %}
+    {% if book.title == page.book %}
+        <div class="card mb-4">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <a href="{{ site.baseurl }}{{ book.url }}">
+                        <img class="img-fluid" src="{{ book.image }}">                           
+                    </a>
+                </div>
+                
+                <div class="col-md-9">
+                    <div class="card-header">                        
+                        {% assign sorted_categories = book.categories | compact | sort %}
+                        {% for category in sorted_categories %}
+                        <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">
+                            <span class="badge rounded-pill bg-danger text-capitalize">{{ category }}</span>
+                        </a>
                         {% endfor %}
-                    </dd>
-
-                    {% if page.rating %}
-                    <dt>Ratings</dt>
-                    <dd>{{ page.rating }}</dd>
-                    {% endif %}
-
-                    {% if page.ratings_count %}
-                    <dt>Ratings Count</dt>
-                    <dd>{{ page.ratings_count }}</dd>
-                    {% endif %}
-
-                    {% if page.description %}
-                    <dt>Description</dt>         
-                    <dd>{{ page.description }}</dd>
-                    {% endif %}
-                </p>
+                        
+                        {% assign sorted_tags = book.tags | compact | sort %}
+                        {% for tag in sorted_tags %}
+                        <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">
+                            <span class="badge rounded-pill bg-secondary text-capitalize">{{ tag }}</span>
+                        </a>
+                        {% endfor %}                                
+                    </div>
+                
+                    <div class="card-body h-50 my-4">
+                        <h4 class="card-title mb-4">
+                            <a class="text-dark text-capitalize" href="{{ site.baseurl }}{{ book.url }}">{{ book.title }}</a>                            
+                        </h4>
+                        <p>by {{ book.authors | join ',' }}</p>
+                        <p class="card-text">{{ book.description | strip_html | truncatewords: 60 }}</p>
+                    </div>                                    
+                </div>
             </div>
-        </div>                    
-    </div>
-</div>
+        </div>
+    {% endif %}
+{% endfor %}
