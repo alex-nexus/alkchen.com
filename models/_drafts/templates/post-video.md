@@ -1,5 +1,5 @@
 ---
-layout: post_video
+layout: post
 type: video
 title:  _title_
 books: _book_
