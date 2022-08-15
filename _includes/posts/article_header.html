@@ -1,39 +1,38 @@
 {% assign author = site.data.posters[page.poster] %}
-
-<div class="row mt-4">       
-    <div class="col-xs-12 col-md-12 text-md-left">
-        <div class="lead">Author:
-            {% if author.avatar_file %}
+    
+<dl class="row mt-4">       
+    <dt class="col-sm-3 text-md-left">Author:</dt>
+    <dd class="col-sm-9">
+        {% if author.avatar_file %}
             <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar_file }}" alt="{{ author.display_name }}">
-            {% elsif author.avatar_url %}
+        {% elsif author.avatar_url %}
             <img class="author-thumb" src="{{ author.avatar_url }}" alt="{{ author.display_name }}">
-            {% endif %}
-            {{ author.display_name }}
-        </div>
-        <div class="lead">Date:
-            {{ page.date | date_to_string }}
-        </div>
-           
-        {% if page.description %}
-            <div class="lead">Description:
-                {{ page.description }}
-            </div>
         {% endif %}
-        
-        {% if page.tags != null %}
-            <div class="lead">
-                    Tags: 
-                    {% assign sorted_tags = page.tags | sort %}
-                    {% for tag in sorted_tags %}
-                    <span class="badge bg-light text-dark rounded-pill">
-                        <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">{{ tag }}</a>
-                    </span>
-                    {% endfor %}
-            </div>
-        {% endif %}
+        {{ author.display_name }}
+    </dd>
+    
+    <dt class="col-sm-3">Date:</dt>
+    <dd class="col-sm-9">{{ page.date | date_to_string }}</dd>
+    
+    {% if page.description %}
+        <dt class="col-sm-3">Description:</dt>
+        <dd class="col-sm-9">{{ page.description }}</dd>        
+    {% endif %}
+    
+    {% if page.tags %}
+        <dt class="col-sm-3">Tags:</dt>
+        <dd class="col-sm-9">
+            {% assign sorted_tags = page.tags | sort %}
+            {% for tag in sorted_tags %}
+            <span class="badge bg-light text-dark rounded-pill">
+                <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">{{ tag }}</a>
+            </span>
+            {% endfor %}
+        </dd>
+    {% endif %}
 
-        {% if page.source_url %}
-            <a class="card-link" href="{{ page.source_url }}" target="_blank">Source</a>                            
-        {% endif %}
-    </div>    
+    {% if page.source_url %}
+        <dt class="col-sm-3">Source:</dt>
+        <dd class="col-sm-9"><a class="card-link" href="{{ page.source_url }}" target="_blank">link</a></dd>        
+    {% endif %}    
 </div>
