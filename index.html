@@ -14,15 +14,13 @@ title: Home
             
             <div class="col-md-12 mb-2">
                 {% assign poster = site.data.posters[post.poster] %}
-                {% assign short_description = post.description or post.content %}
+                {% assign short_description = post.content or post.description %}
 
                 {% case post.type %}
                 {% when 'book_summary' %}                    
                     {% include posts/card/book_summary.html %}                
                 {% when 'quote' %}
                     {% include posts/card/quote.html %}            
-                {% when 'video' %}
-                    {% include posts/card/video.html %}
                 {% else %}
                     {% include posts/card/article.html %}
                 {% endcase %}

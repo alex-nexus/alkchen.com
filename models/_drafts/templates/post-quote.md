@@ -7,7 +7,6 @@ book: _book_name_
 category: _category_
 tags: [ _tag_ ]
 image: _image_
-text_type: text-white
 ---
 ## Complexity is anything related to 
 ## the structure of a software system 

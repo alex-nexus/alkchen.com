@@ -13,7 +13,7 @@ layout: default
     <div class="row listrecent">
         {% for post in page.posts %}
             {% assign poster = site.data.posters[post.poster] %}
-            {% assign short_description = post.description or post.content %}
+            {% assign short_description = post.description or post.content %}            
             
             <div class="col-md-12 mb-20px">
                 {% case post.type %}

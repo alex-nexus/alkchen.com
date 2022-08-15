@@ -1,6 +1,6 @@
-<div class="card {{ post.text_type }} mb-4">
+<div class="card mb-4">
     <div class="row g-0">
-        <div class="col-md-9">
+        <div class="col-md-9 text-white">
             <div class="h-100">
                 <div class="wrapthumbnail">
                     <img class="img-fluid" src="{{ post.image }}">                           
@@ -21,12 +21,12 @@
 
                 {% assign sorted_categories = post.categories | compact | sort %}
                 {% for category in sorted_categories %}
-                <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">
+                <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}" target="_blank">
                     <span class="badge rounded-pill bg-danger text-capitalize">{{ category }}</span>
                 </a>
-                {% endfor %}                
+                {% endfor %}
 
-                {% assign sorted_tags = post.tags | sort %}
+                {% assign sorted_tags = post.tags | compact | sort %}
                 {% for tag in sorted_tags %}
                 <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">
                     <span class="badge rounded-pill bg-secondary text-capitalize">{{ tag }}</span>
@@ -38,15 +38,15 @@
                         <svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25">
                             <path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path>
                         </svg>
-                    </div>                    
-                {% endif %}        
+                    </div>
+                {% endif %}
             </div>
-            
-            <div class="card-body h-50 my-4">
-                <p class="card-title mb-4 text-dark text-capitalize">{{ post.content | strip_html }}</p>
+
+            <div class="card-body h-50 mb-4">
+                <p class="card-title mb-4 text-dark text-capitalize">{{ short_description | strip_html }}</p>
                 <p class="card-title mb-4 text-dark text-capitalize float-end">- {{ post.author }}</p>
-                <div class="clearfix"></div>                    
-            </div>            
+                <div class="clearfix"></div>
+            </div>
 
             <div class="card-footer b-0 bg-white mt-auto">
                 <div class="wrapfooter">
@@ -60,9 +60,8 @@
                     <span class="author-meta">
                         <span class="post-name text-dark">{{ poster.display_name }}</span>
                     </span>
-                    <br/>
-                    
-                    <span class="post-date">{{ post.date | date_to_string }}</span>                    
+
+                    <span class="post-date">{{ post.date | date_to_string }}</span>
                     <div class="clearfix"></div>
                 </div>
             </div>
