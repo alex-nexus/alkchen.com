@@ -12,10 +12,15 @@ layout: default
     </div>
     <div class="row listrecent">
         {% for post in page.posts %}
-            {% assign poster = site.data.posters[post.poster] %}
-            {% assign short_description = post.description or post.content %}            
-            
             <div class="col-md-12 mb-20px">
+                {% assign poster = site.data.posters[post.poster] %}
+                
+                {% if post.description %}
+                    {% assign short_description = post.description %}                
+                {% elsif post.content %}
+                    {% assign short_description = post.content %}
+                {% endif %}
+
                 {% case post.type %}
                 {% when 'quote' %}
                     {% include posts/card/quote.html %}
