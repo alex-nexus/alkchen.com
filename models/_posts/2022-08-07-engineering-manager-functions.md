@@ -6,7 +6,7 @@ author: alex
 poster: alex
 categories: [ leadership ]
 tags: [ featured, management, mine]
-image: /assets/images/6.jpg
+image: /assets/images/posts/6.jpg
 ---
 
 There are 4 roles that an engineering manager needs to play and play well.

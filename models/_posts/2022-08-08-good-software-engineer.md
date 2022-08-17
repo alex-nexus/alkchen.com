@@ -6,7 +6,7 @@ author: alex
 poster: alex
 categories: [ software ]
 tags: [ mine ]
-image: /assets/images/13.jpg
+image: /assets/images/posts/13.jpg
 ---
 
 A great software engineer should have the following technical talents: 

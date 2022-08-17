@@ -20,7 +20,7 @@
 
 `gcloud config set project jekyll-content-site`
 
-`gsutil rsync -R _site/ gs://www.alkchen.com`
+`gsutil rsync -Ri _site/ gs://www.alkchen.com`
 
 ###
   - [Adding a CNAME record](https://cloud.google.com/identity/docs/add-cname?hl=en_US)
