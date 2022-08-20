@@ -1,6 +1,10 @@
 alex:
   display_name: AC
-  avatar_file: assets/images/avatar.jpeg
+  avatar_file: assets/images/avatars/alex.jpeg
+  description: "Author of this website"
+openai: 
+  display_name: Open AI
+  avatar_file: assets/images/avatars/openai.jpg
   description: "Author of this website"
 bill_campbell:
   display_name: Bill Campbell
