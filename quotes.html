@@ -1,0 +1,34 @@
+---
+layout: default
+title: Quotes
+---
+<div class="section-title">
+    <h1><span>Quotes</span></h1>
+</div>
+
+<section class="featured-posts">
+    <div class="row">
+        {% for quote in site.quotes %}
+            {% assign poster = site.data.posters[quote.poster] %}                
+            
+            {% if quote.description %}
+                {% assign short_description = quote.description | strip_html %}
+            {% elsif quote.content %}
+                {% assign short_description = quote.content | strip_html %}
+            {% endif %}
+
+            <div class="col-md-12 mb-2">
+                {% include quotes/card/quote.html short_description=short_description%}
+            </div>
+        {% endfor %}        
+    </div>
+</section>
+
+<div class="bottompagination">
+    <div class="pointerup">
+        <i class="fa fa-caret-up"></i>
+    </div>
+    <span class="navigation" role="navigation">
+        {% include pagination.html %}
+    </span>
+</div>
