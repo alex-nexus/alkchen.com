@@ -33,6 +33,8 @@
   - [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
   - [Liquid Template](https://shopify.github.io/liquid)
   - [Jekyll Generators](https://jekyllrb.com/docs/plugins/generators/)
+  - [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/)
+  - [CSS colors](https://www.w3schools.com/cssref/css_colors.asp)
 
 
 ### Images

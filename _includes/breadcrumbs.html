@@ -1,0 +1,11 @@
+{% assign tokens = include.path | split:"/" | %}
+{% assign tokens = tokens | pop | shift %}
+{% assign route="" %}
+{% for token in tokens %}
+    {% assign route = route | append: '/' | append: token %}
+    <span class="fs-6 text-capitalize">{{ token | replace: "-", " "}}</span>
+    
+    {% unless forloop.last %}
+        <span class="prompt">></span>
+    {% endunless %}
+{% endfor %}

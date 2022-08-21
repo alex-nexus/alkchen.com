@@ -1,6 +1,6 @@
 # Site
-name: AC's notes and thoughts
-title: AC's notes and thoughts
+name: AC's knowledge base and thoughts
+title: AC's knowledge base and thoughts
 description: "On Startups, Management, Family, Product, Software, and VC"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
@@ -18,6 +18,9 @@ collections:
   books:
     output: true
     permalink: /:collection/:title  
+  quotes:
+    output: true
+    permalink: /:collection/:title
 
 # Plugins
 plugins:
