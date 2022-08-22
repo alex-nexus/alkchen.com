@@ -4,7 +4,7 @@ type: book_summary
 title:  Do Good Anyway - Anyway the Paradoxical Commandments by Kent Keith
 book: Anyway-The Paradoxical Commandments
 authors: [ ent Keith ]
-poster: [ avil_beckford ]
+poster: avil_beckford 
 categories: [ christian ]
 tags: [  ]
 image: http://1.bp.blogspot.com/-iwIyfipJ3gU/UmaM-jl4FsI/AAAAAAAADDo/k4NjFgZtMPc/s1600/lindsay+2-02.jpg
