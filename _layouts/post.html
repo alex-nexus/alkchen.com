@@ -7,38 +7,41 @@ layout: default
         {% include posts/headline.html %}
         {% include reading-time.html %}
         {% include breadcrumbs.html path=page.path %}            
-        
+    </div>
+
+    <div class="col-md-10 flex-first flex-md-unordered">
+        <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+        {% if site.adsense == "enabled" %}
+            {% include adsense-under-header.html %}
+        {% endif %}
+        <!-- End Adsense -->
+    </div>
+    
+    {% if page.image %}
+        <div class="col-xs-12 offset-md-2 col-md-8">
+            <img class="img-fluid img-thumbnail" src="{{ page.image }}">
+        </div>
+    {% endif %}
+
+    <div class="col-md-10 flex-first flex-md-unordered">
         {% if page.book %}
             {% include posts/book_header.html %}
         {% elsif page.youtube_url %}
             {% assign youtube_url = page.youtube_url %}
             {% include embed_youtube.html %}
-        {% else %}
-            <div class="row">   
-                <div class="col-xs-12 offset-md-2 col-md-8">
-                    {% if page.image %}
-                    <img class="img-fluid w-100" src="{{ page.image }}">
-                    {% endif %}
-                </div>
-            </div>            
-        {% endif %}
+        {% endif %}        
+    </div>
 
-        <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
-        {% if site.adsense == "enabled" %}
-            {% include adsense-under-header.html %}
-        {% endif %}
-        <!-- End Adsense -->            
-
-        
-        <!-- Post Content -->
-        <div class="my-4">
-            {{ content }}       
-        </div>
-                    
-        {% include posts/article_header.html %}
-        </div>                       
+    <div class="col-md-10 flex-first flex-md-unordered my-4">
+        {{ content }}       
+    </div>
+    
+    <div class="col-md-10 flex-first flex-md-unordered my-4">
+        {% include posts/article_header.html %}        
     </div>
     <!-- End Post -->
+    
+    <hr/>
 
     <!-- Prev/Next -->
     <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
@@ -50,21 +53,22 @@ layout: default
         {% endif %}
         <div class="clearfix"></div>
     </div>
+
+
+    <!-- End Article
+    ================================================== -->
+
+    <!-- Begin Comments
+    ================================================== -->
+    {% if page.comments != false %}
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-12">
+                {% include disqus.html %}
+            </div>
+        </div>    
+    {% endif %}
+    <!--End Comments
 </div>
-
-<!-- End Article
-================================================== -->
-
-<!-- Begin Comments
-================================================== -->
-{% if page.comments != false %}
-    <div id="comments" class="row justify-content-center mb-5">
-        <div class="col-md-12">
-            {% include disqus.html %}
-        </div>
-    </div>    
-{% endif %}
-<!--End Comments
 
 <!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
 https://search.google.com/structured-data/testing-tool/u/0/
