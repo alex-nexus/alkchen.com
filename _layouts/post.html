@@ -2,56 +2,55 @@
 layout: default
 ---
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 flex-first flex-md-unordered">
-            {% include posts/headline.html %}
-            {% include reading-time.html %}
-            {% include breadcrumbs.html path=page.path %}            
-            
-            {% if page.book %}
-                {% include posts/book_header.html %}
-            {% elsif page.youtube_url %}
-                {% assign youtube_url = page.youtube_url %}
-                {% include embed_youtube.html %}
-            {% else %}
-                <div class="row">   
-                    <div class="col-xs-12 offset-md-2 col-md-8">
-                        {% if page.image %}
-                        <img class="img-fluid w-100" src="{{ page.image }}">
-                        {% endif %}
-                    </div>
-                </div>            
-            {% endif %}
+<div class="row">
+    <div class="col-md-10 flex-first flex-md-unordered">
+        {% include posts/headline.html %}
+        {% include reading-time.html %}
+        {% include breadcrumbs.html path=page.path %}            
+        
+        {% if page.book %}
+            {% include posts/book_header.html %}
+        {% elsif page.youtube_url %}
+            {% assign youtube_url = page.youtube_url %}
+            {% include embed_youtube.html %}
+        {% else %}
+            <div class="row">   
+                <div class="col-xs-12 offset-md-2 col-md-8">
+                    {% if page.image %}
+                    <img class="img-fluid w-100" src="{{ page.image }}">
+                    {% endif %}
+                </div>
+            </div>            
+        {% endif %}
 
-            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
-            {% if site.adsense == "enabled" %}
-                {% include adsense-under-header.html %}
-            {% endif %}
-            <!-- End Adsense -->            
+        <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+        {% if site.adsense == "enabled" %}
+            {% include adsense-under-header.html %}
+        {% endif %}
+        <!-- End Adsense -->            
 
-            
-            <!-- Post Content -->
-            <div class="my-4">
-                {{ content }}       
-            </div>
-                        
-            {% include posts/article_header.html %}
-            </div>                       
+        
+        <!-- Post Content -->
+        <div class="my-4">
+            {{ content }}       
         </div>
-        <!-- End Post -->
-
-        <!-- Prev/Next -->
-        <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
-            {% if page.previous.url %}
-                <a class="prev d-block col-md-6" href="{{page.previous.url}}"> &laquo; {{page.previous.title | truncatewords:8}}</a>
-            {% endif %}
-            {% if page.next.url %}
-                <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url}}">{{page.next.title | truncatewords:8 }} &raquo; </a>
-            {% endif %}
-            <div class="clearfix"></div>
-        </div>
+                    
+        {% include posts/article_header.html %}
+        </div>                       
     </div>
+    <!-- End Post -->
+
+    <!-- Prev/Next -->
+    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+        {% if page.previous.url %}
+            <a class="prev d-block col-md-6" href="{{page.previous.url}}"> &laquo; {{page.previous.title | truncatewords:8}}</a>
+        {% endif %}
+        {% if page.next.url %}
+            <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url}}">{{page.next.title | truncatewords:8 }} &raquo; </a>
+        {% endif %}
+        <div class="clearfix"></div>
+    </div>
+</div>
 
 <!-- End Article
 ================================================== -->
@@ -66,8 +65,6 @@ layout: default
     </div>    
 {% endif %}
 <!--End Comments
-================================================== -->
-</div>
 
 <!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
 https://search.google.com/structured-data/testing-tool/u/0/
