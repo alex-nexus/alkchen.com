@@ -14,13 +14,10 @@ collections_dir: models
 collections:
   authors:
     output: true
-    permalink: /:collection/:name
   books:
     output: true
-    permalink: /:collection/:title  
   quotes:
     output: true
-    permalink: /:collection/:title
 
 # Plugins
 plugins:
