@@ -1,40 +1,19 @@
 ---
 layout: default
 ---
-<section class="recent-posts">
-    <div class="section-title">
-        <h2>
-            <span>{{ page.layout | capitalize }}: {{ page.name | capitalize }}</span>
-        </h2>
-    </div>
-    <div class="row listrecent">
-        {% for post in site.posts %}
-            {% if post.authors contains page.name %}
-                {% assign author = site.data.authors[post.author] %}
-                <div class="col-md-12 mb-20px">
-                    {% if post.type == 'quote' %}
-                        {% include posts/card/quote.html %}
-                    {% elsif post.type == 'book_summary' %}
-                        {% include posts/card/book_summary.html %}
-                    {% elsif post.type == 'video' %}
-                        {% include posts/card/video.html %}
-                    {% else %}
-                        {% include posts/card/article.html %}
-                    {% endif %}
-                </div>
+
+<div class="section-title">
+    <h2>
+        <span>{{ page.layout | capitalize }}: {{ page.name | uppercase }}</span>
+    </h2>
+</div>
+    
+<section class="featured-posts">
+    <div class="row">
+        {% for book in site.books %}
+            {% if book.authors contains page.name %}
+                {% include books/card.html %}
             {% endif %}
-        {% endfor %}        
+        {% endfor %}
     </div>
 </section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-    <div class="pointerup">
-        <i class="fa fa-caret-up"></i>
-    </div>
-    <span class="navigation" role="navigation">
-        {% include pagination.html %}
-    </span>
-</div>
-

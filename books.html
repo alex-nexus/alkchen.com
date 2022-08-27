@@ -3,22 +3,18 @@ layout: default
 title: Books
 ---
 
-<div class="section-title">
-    <h1>Books</h1>
-</div>
-
 <!-- Featured
 ================================================== -->
 <section class="featured-posts">
     <div class="section-title">
-        <h2><span>Featured</span></h2>
+        <h2><span>Featured Books</span></h2>
     </div>
     <div class="row">
         {% for book in site.books %}
             {% if book.tags contains 'featured' %}
-                {% include books/card.html %}                
+                {% include books/card.html %}           
             {% endif %}
-        {% endfor %}        
+        {% endfor %}     
     </div>
 </section>
 
@@ -26,7 +22,7 @@ title: Books
 ================================================== -->
 <section class="recent-posts">
     <div class="section-title">
-        <h2><span>All</span></h2>
+        <h2><span>All Books</span></h2>
     </div>
     <div class="row listrecent">
         {% for book in site.books %}            
