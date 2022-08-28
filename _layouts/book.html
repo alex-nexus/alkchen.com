@@ -16,15 +16,7 @@ layout: default
     <div class="row listrecent">
         {% for post in site.posts %}
             {% if post.book and post.book == page.title %}
-                {% assign author = site.data.authors[post.author] %}
-                <div class="col-md-12 mb-20px">
-                    {% case post.type %}
-                        {% when 'book_summary' %}
-                            {% include posts/card/book_summary.html %}
-                        {% else %}
-                            {% include posts/card/article.html %}
-                    {% endcase %}                    
-                </div>
+                {% include posts/row.html post=post %}                
             {% endif %}
         {% endfor %}
     </div>
