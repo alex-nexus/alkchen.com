@@ -2,7 +2,9 @@
     <div class="card">
         <div class="card-header">
             <div class="float-start">
-                <h5>Chapter {{ quote.chapter }}</h5>
+                {% if quote.chapter %}
+                    <h5>Chapter {{ quote.chapter }}</h5>
+                {% endif %}
             </div>
             <div class="float-end">
                 {% assign sorted_tags = quote.tags | compact | sort %}        
