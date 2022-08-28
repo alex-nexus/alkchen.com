@@ -4,7 +4,11 @@ layout: default
 
 <div class="row">
     <div class="col-md-10 flex-first flex-md-unordered">
-        {% include posts/headline.html %}
+        <div class="section-title">
+            <h1 class="posttitle text-capitalize">
+                <span>{{ page.title }}</span>
+            </h1>
+        </div>
         {% include reading-time.html %}
         {% include breadcrumbs.html path=page.path %}            
     </div>

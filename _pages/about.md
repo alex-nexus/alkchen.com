@@ -74,7 +74,7 @@ In my spare time, I enjoy doing the following:
   - Play with my son
 
 I enjoy reading about the following domains
-  - Entrepreneur
+  - Entrepreneurship
   - Investing
   - Leadership and Management
   - Parenting
