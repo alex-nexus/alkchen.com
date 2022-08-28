@@ -10,7 +10,7 @@ permalink: /authors/
 <div class="row">
     {% for author in site.authors %}
         {% if author.rating == 5 %}
-            {% include authors/featured_card.html %}
+            {% include authors/card.html %}
         {% endif %}
     {% endfor %}
 </div>
@@ -21,7 +21,7 @@ permalink: /authors/
 <div class="row listrecent">
     {% for author in site.authors %}
         {% if author.rating == 4 %}
-            {% include authors/featured_card.html %}
+            {% include authors/card.html %}
         {% endif %}
     {% endfor %}
 </div>

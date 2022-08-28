@@ -1,29 +1,35 @@
 <!-- begin post -->
-{% assign author = site.data.authors[post.author] %}
-
-<div class="col-lg-4 col-md-6 mb-30px card-group">
-    <div class="card h-100">
-        <div class="maxthumb">
-            <a href="{{ site.baseurl }}{{ author.url }}">
-                {% if author.image_url %}
-                    <img class="img-fluid" src="{{ author.image_url }}" alt="{{ author.full_name }}">                     
-                {% endif %}
-            </a>
-        </div>
-        <div class="card-body">
-            <h2 class="card-title">
-                <a class="text-dark" href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>                
-            </h2>            
-            <h4 class="card-text">{{ author.introduction | strip_html | truncatewords:12 }}</h4>
-        </div>
-        <div class="card-footer bg-white">
-            <div class="wrapfooter">
-                {% if author.rating %}
-                <div class="mb-2 mt-2 font-weight-normal">
-                    {% include star_rating.html %}
+<div class="col-md-6 mb-30px">
+    <div class="listfeaturedtag h-100">
+        <div class="row h-100 g-0">
+            <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
+                <div class="h-100">
+                    <div class="wrapthumbnail">
+                        <a href="{{ site.baseurl }}{{ author.url }}">
+                            <img class="featured-box-img-cover" src="{{ author.image_url }}">
+                        </a>
+                    </div>
                 </div>
-                {% endif %}                                            
-                <div class="clearfix"></div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-7">
+                <div class="h-100 card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <a class="text-dark" href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>                                
+                            </h2>
+                            <h4 class="card-text">{{ author.introduction | strip_html | truncatewords:15 }}</h4>
+                        </div>
+                        <div class="card-footer b-0 bg-white mt-auto">
+                            <div class="wrapfooter">
+                                <div class="mb-2 mt-2 font-weight-normal">
+                                    {% include star_rating.html %}
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
