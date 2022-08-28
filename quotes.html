@@ -4,7 +4,7 @@ title: Quotes
 permalink: /quotes/
 ---
 <div class="section-title">
-    <h1><span>Quotes</span></h1>
+    <h2><span>Quotes</span></h2>
 </div>
 
 <section class="featured-posts">
@@ -19,7 +19,7 @@ permalink: /quotes/
             {% endif %}
 
             <div class="col-md-12 mb-2">
-                {% include quotes/card/quote.html short_description=short_description%}
+                {% include quotes/card.html short_description=short_description%}
             </div>
         {% endfor %}        
     </div>
