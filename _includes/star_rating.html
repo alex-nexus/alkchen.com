@@ -1,9 +1,13 @@
+{% assign solid_count = rating | integer | floor %}
+{% assign empty_count = 5 | minus: solid_count %}
+
 <div class="rating-holder">
-<div class="c-rating c-rating--regular" data-rating-value="{{page.rating}}">
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>4</button>
-  <button>5</button>
-</div>
+  <div class="c-rating c-rating--regular">
+    {% for i in (1..solid_count) %}
+      <i class="fa-solid fa-star"></i>
+    {% endfor %}
+    {% for i in (1..empty_count) %}
+      <i class="fa-regular fa-star"></i>
+    {% endfor %}
+  </div>
 </div>
