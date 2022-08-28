@@ -33,7 +33,7 @@ permalink: /authors/
 <div class="row listrecent">
     {% for author in site.authors %}
         {% if author.rating == 3 %}
-            {% include authors/featured_card.html %}
+            {% include authors/card.html %}
         {% endif %}
     {% endfor %}
 </div>
