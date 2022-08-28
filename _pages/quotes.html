@@ -18,9 +18,8 @@ permalink: /quotes/
                 {% assign short_description = quote.content | strip_html %}
             {% endif %}
 
-            <div class="col-md-12 mb-2">
-                {% include quotes/card.html short_description=short_description%}
-            </div>
+            
+            {% include quotes/card.html short_description=short_description%}
         {% endfor %}        
     </div>
 </section>
