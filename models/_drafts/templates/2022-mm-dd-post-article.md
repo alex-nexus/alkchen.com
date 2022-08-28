@@ -6,6 +6,6 @@ poster: _poster_
 categories: [ _category_ ]
 tags: [ _tag_ ]
 image: _image_
-youtube_url: https://www.youtube.com/embed/<_youtube_id_>
+youtube_uid: _youtube_uid_
 ---
 

@@ -17,7 +17,7 @@ collections:
   books:
     output: true
   quotes:
-    output: true
+    output: false
 
 # Plugins
 plugins:
