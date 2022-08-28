@@ -1,18 +1,19 @@
-<div class="card mb-4">
+{% assign md_left = post.card_with | default: 6 %}
+{% assign md_right = 12 | minus: md_left %}
+
+<div class="card mb-2">
     <div class="row g-0">
-        <div class="col-md-6 text-white">
+        <div class="col-md-{{ md_left }}">
             <div class="h-100">
                 <div class="wrapthumbnail">
-                    {% if post.image %}
-                        <img class="img-fluid" src="{{ post.image }}">
-                    {% else %}
-                        <img class="img-fluid" src="{{ post.images[0] }}">
+                    {% if image %}
+                        <img class="img-fluid" src="{{ image }}">
                     {% endif %}                                    
                 </div>
             </div>
         </div>
         
-        <div class="col-md-6">
+        <div class="col-md-{{ md_right }}">
             <div class="card-header">
                 <span class="badge rounded-pill bg-primary text-capitalize">{{ post.type | replace: "_", " " }}</span>                        
 
