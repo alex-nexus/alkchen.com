@@ -1,18 +1,14 @@
 ---
 layout: default
+title: Posts
 ---
-
-<!-- Posts Index
-================================================== -->
 <section class="recent-posts">
     <div class="section-title">
-        <h2>
-            <span>{{ page.type | capitalize }}: {{ page.title | capitalize }}</span>
-        </h2>
+        <h2><span>{{ page.type | capitalize }}: {{ page.title | capitalize }}</span></h2>
     </div>
-    <div class="row listrecent">
+    <div class="row">
         {% for post in page.posts %}
-            <div class="col-md-12 mb-20px">
+            <div class="col-md-12 mb-2">
                 {% assign poster = site.data.posters[post.poster] %}
                 
                 {% if post.description %}
@@ -21,27 +17,20 @@ layout: default
                     {% assign short_description = post.content %}
                 {% endif %}
 
-                {% case post.type %}
-                {% when 'quote' %}
-                    {% include posts/card/quote.html %}
-                {% when 'book_summary' %}
-                    {% include posts/card/book_summary.html %}
+                {% if post.type == 'book_summary' %}
+                    {% for book in site.books %}
+                        {% if post.book == book.title %}
+                            {% assign image = book.image %}
+                        {% endif %}
+                    {% endfor %}
+                {% elsif post.images %}
+                    {% assign image = post.images[0] %}
                 {% else %}
-                    {% include posts/card/article.html %}
-                {% endcase %}
+                    {% assign image = post.image %}
+                {% endif %}
+                
+                {% include posts/card/article.html image=image %}
             </div>
         {% endfor %}
     </div>
 </section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-    <div class="pointerup">
-        <i class="fa fa-caret-up"></i>
-    </div>
-    <span class="navigation" role="navigation">
-        {% include pagination.html %}
-    </span>
-</div>
-
