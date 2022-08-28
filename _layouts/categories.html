@@ -1,25 +1,23 @@
 ---
 layout: default
-permalink: "/categories.html"
+permalink: "/categories"
 ---
-
-<div class="row listrecent">
-{% for category in site.categories %}
-    <div class="section-title col-md-12 mt-4">
-        <h2 id="{{ category[0] | replace: " ","-" }}">
-            Category: <span class="text-capitalize">{{ category[0] }}</span>
-        </h2>
+{% for category in site.categories %}    
+    <div class="row">
+        <div class="col-md-12">
+            <section class="category-posts">
+                <div class="section-title">
+                    <h2 id="{{ category[0] }}">
+                        Category: <span class="text-capitalize">{{ category[0] }}</span>
+                    </h2>
+                </div>
+                        
+                <div class="row">
+                    {% for post in category[1] %}
+                        {% include posts/postbox.html %}
+                    {% endfor %}
+                </div>
+            </section>
+        </div>
     </div>
-    {% assign pages_list = category[1] %}
-    {% for post in pages_list %}
-        {% if post.title != null %}
-            {% if group == null or group == post.group %}
-                {% include posts/postbox.html %}
-            {% endif %}
-        {% endif %}
-    {% endfor %}
-    
-    {% assign pages_list = nil %}
-    {% assign group = nil %}
 {% endfor %}
-</div>
