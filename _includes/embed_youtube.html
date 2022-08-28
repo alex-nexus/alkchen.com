@@ -1,9 +1,13 @@
-<div class="youtube-video-container">
-    <iframe width="560" height="315" 
-        src="{{ page.youtube_url }}" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-</div>
+{% if page.youtube_uid %}
+    <a href="https://www.youtube.com/watch?v={{ page.youtube_uid }}">Youtube URL</a>
+
+    <div class="youtube-video-container">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/{{ page.youtube_uid }}" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+{% endif %}
