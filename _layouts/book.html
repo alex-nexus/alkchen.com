@@ -1,36 +1,49 @@
 ---
 layout: default
 ---
+
+{% assign book = page %}
+    
 <div class="section-title">
-    <h2>
-        <span class="text-capitalize">{{ page.layout | capitalize }}: {{ page.title | capitalize }}</span>
-    </h2>
+    <h2><span class="text-capitalize">{{ page.layout | capitalize }}: {{ page.title | capitalize }}</span></h2>
 </div>
 
 <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <button class="nav-link active" id="nav-posts-tab" data-bs-toggle="tab" data-bs-target="#nav-posts" type="button" role="tab" aria-controls="nav-posts" aria-selected="false">Posts</button>
-      <button class="nav-link" id="nav-quotes-tab" data-bs-toggle="tab" data-bs-target="#nav-quotes" type="button" role="tab" aria-controls="nav-quotes" aria-selected="false">Quotes</button>
+        <button class="nav-link active" id="nav-authors-tab" data-bs-toggle="tab" data-bs-target="#nav-authors" type="button" role="tab" aria-controls="nav-authors" aria-selected="false">Author(s)</button>
+        <button class="nav-link" id="nav-posts-tab" data-bs-toggle="tab" data-bs-target="#nav-posts" type="button" role="tab" aria-controls="nav-posts" aria-selected="false">Posts</button>
+        <button class="nav-link" id="nav-quotes-tab" data-bs-toggle="tab" data-bs-target="#nav-quotes" type="button" role="tab" aria-controls="nav-quotes" aria-selected="false">Quotes</button>
     </div>
-  </nav>
-  <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-posts" role="tabpanel" aria-labelledby="nav-posts-tab">
-        <div class="row mt-2">
+</nav>
+  
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-authors" role="tabpanel" aria-labelledby="nav-authors-tab">
+        <div class="row mt-4">
+            {% for author in site.authors %}
+                {% if book.authors contains author.name %}
+                    {% include authors/card.html author=author %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="nav-posts" role="tabpanel" aria-labelledby="nav-posts-tab">
+        <div class="row mt-4">
             {% for post in site.posts %}
                 {% if post.book and post.book == page.title %}
-                    {% include posts/row.html post=post %}                
+                    {% include posts/row.html post=post %}
                 {% endif %}
             {% endfor %}
         </div>
     </div>
     <div class="tab-pane fade" id="nav-quotes" role="tabpanel" aria-labelledby="nav-quotes-tab">
-        <div class="row mt-2">
+        <div class="row mt-4">
             {% for quote in site.quotes %}
                 {% if quote.book and quote.book == page.title %}
-                    {% include quotes/row.html short_description=short_description%}            
+                    {% include quotes/row.html short_description=short_description %}
                 {% endif %}
             {% endfor %}
         </div>
-    </div>    
-  </div>
+    </div>
+</div>
 
