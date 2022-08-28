@@ -2,7 +2,18 @@
 layout: default
 title: Quotes
 permalink: /quotes/
+allowed_image_extnames: [.jpg, .jpeg, .png, .webp, .gif]
 ---
+{% assign quote_images = "" | split: "," %}
+{% for file in site.static_files %}
+    {% if file.path contains 'images/quotes' %}
+        {% if page.allowed_image_extnames contains file.extname  %}
+            {% assign quote_images = quote_images | push: file.path %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+{% assign images_count = quote_images | size %}
+
 <div class="section-title">
     <h2><span>Quotes</span></h2>
 </div>
@@ -10,7 +21,9 @@ permalink: /quotes/
 <section class="featured-posts">
     <div class="row">
         {% for quote in site.quotes %}
-            {% assign poster = site.data.posters[quote.poster] %}                
+            {% assign poster = site.data.posters[quote.poster] %}
+            {% assign image_index = forloop.index | modulo: images_count %}
+            {% assign image = quote_images[image_index] %}
             
             {% if quote.description %}
                 {% assign short_description = quote.description | strip_html %}
@@ -18,7 +31,7 @@ permalink: /quotes/
                 {% assign short_description = quote.content | strip_html %}
             {% endif %}
             
-            {% include quotes/card.html short_description=short_description%}
+            {% include quotes/card.html image=image %}
         {% endfor %}        
     </div>
 </section>
