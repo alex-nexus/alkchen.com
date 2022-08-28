@@ -5,9 +5,7 @@ permalink: "/categories"
 {% for category in site.categories %}
     <section class="category-posts">
         <div class="section-title">
-            <h2 id="{{ category[0] }}">
-                Category: <span class="text-capitalize">{{ category[0] }}</span>
-            </h2>
+            <h2><span class="text-capitalize">Category: {{ category[0]}}</span></h2>
         </div>
         <div class="row">
             {% for post in category[1] %}

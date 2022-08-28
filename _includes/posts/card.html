@@ -1,19 +1,17 @@
-{% assign md_left = post.card_width | default: 6 %}
-{% assign md_right = 12 | minus: md_left %}
+{% assign lg_left = post.card_width | default: 6 %}
+{% assign lg_right = 12 | minus: lg_left %}
 
 <div class="card mb-2">
     <div class="row g-0">
-        <div class="col-md-{{ md_left }}">
-            <div class="h-100">
-                <div class="wrapthumbnail">
-                    {% if image %}
-                        <img class="img-fluid" src="{{ image }}">
-                    {% endif %}                                    
-                </div>
-            </div>
+        <div class="col-lg-{{ lg_left }}">
+            <div class="wrapthumbnail">
+                {% if image %}
+                    <img class="img-fluid" src="{{ image }}">
+                {% endif %}                                    
+            </div>            
         </div>
         
-        <div class="col-md-{{ md_right }}">
+        <div class="col-lg-{{ lg_right }}">
             <div class="card-header">
                 <span class="badge rounded-pill bg-primary text-capitalize">{{ post.type | replace: "_", " " }}</span>                        
 
@@ -41,9 +39,9 @@
             </div>
 
             <div class="card-body h-50 mb-4">
-                <h4 class="card-title">
+                <h5 class="card-title">
                     <a class="text-capitalize text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>                            
-                </h4>
+                </h5>
                 <p class="card-text">{{ short_description | strip_html | truncatewords: 30 }}</p>
                 <div class="clearfix"></div>
             </div>
