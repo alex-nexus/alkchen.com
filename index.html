@@ -8,29 +8,7 @@ title: Home
     </div>
     <div class="row">
         {% for post in paginator.posts %}
-            <div class="col-md-12 mb-2">
-                {% assign poster = site.data.posters[post.poster] %}
-                
-                {% if post.description %}
-                    {% assign short_description = post.description %}
-                {% elsif post.content %}
-                    {% assign short_description = post.content %}
-                {% endif %}
-                
-                {% if post.type == 'book_summary' %}
-                    {% for book in site.books %}
-                        {% if post.book == book.title %}
-                            {% assign image = book.image %}
-                        {% endif %}
-                    {% endfor %}
-                {% elsif post.images %}
-                    {% assign image = post.images[0] %}
-                {% else %}
-                    {% assign image = post.image %}
-                {% endif %}
-                
-                {% include posts/card/article.html image=image %}
-            </div>         
+            {% include posts/card/row.html post=post %}            
         {% endfor %}
     </div>
 </section>
