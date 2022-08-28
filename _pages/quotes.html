@@ -17,7 +17,6 @@ permalink: /quotes/
             {% elsif quote.content %}
                 {% assign short_description = quote.content | strip_html %}
             {% endif %}
-
             
             {% include quotes/card.html short_description=short_description%}
         {% endfor %}        
