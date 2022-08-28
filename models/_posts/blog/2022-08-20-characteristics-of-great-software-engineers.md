@@ -3,6 +3,7 @@ layout: post
 title: 10 characteristics of a great software engineer
 poster: openai
 categories: [ software ]
+tags: [blog]
 image: /assets/images/posts/4.jpg
 ---
 

@@ -5,6 +5,7 @@ type: article
 author: agile_actors
 poster: alex
 categories: [ software ]
+tags: [blog]
 image: /assets/images/posts/4-sofware-principles.png
 rating: .5
 ---

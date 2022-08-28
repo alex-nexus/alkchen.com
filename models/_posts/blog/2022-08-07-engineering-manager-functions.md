@@ -5,7 +5,7 @@ title:  The 4 functions of an engineering manager
 author: alex
 poster: alex
 categories: [ leadership ]
-tags: [ featured, management, mine]
+tags: [ featured, management, blog]
 image: /assets/images/posts/6.jpg
 ---
 

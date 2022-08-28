@@ -5,7 +5,7 @@ title:  My Software Principles
 author: alex
 poster: alex
 categories: [ software ]
-tags: [ me ]
+tags: [ blog ]
 image: /assets/images/posts/principles.jpeg
 card_width: 4
 ---

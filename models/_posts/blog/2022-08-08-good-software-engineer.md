@@ -5,7 +5,7 @@ type: article
 author: alex
 poster: alex
 categories: [ software ]
-tags: [ mine ]
+tags: [ blog ]
 image: /assets/images/posts/13.jpg
 ---
 
