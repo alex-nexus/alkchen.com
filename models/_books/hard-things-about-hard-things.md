@@ -5,7 +5,7 @@ tagline: Building a Business When There Are No Easy Answers
 authors: [ Ben Horowitz ]
 tags: [featured]
 amazon_url: https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205/
-categories: [ entrepreneur ]
+categories: [ entrepreneurship ]
 rating: 4.5
 ratings_count : 4998
 image: https://images-na.ssl-images-amazon.com/images/I/51NCFyHpkxL.jpg

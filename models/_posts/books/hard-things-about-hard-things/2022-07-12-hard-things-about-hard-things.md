@@ -5,36 +5,27 @@ title:  Hard Things about Hard Things by Ben Horowitz
 book: The Hard Thing About Hard Things
 authors: [Ben Horowitz]
 poster: ashishb
-categories: [ entrepreneur, software ]
+categories: [ entrepreneurship, software ]
 tags: [ book summary, featured ]
 source_url: https://ashishb.net/book-summary/book-summary-hard-things-about-hard-things-by-ben-horowitz/
 card_width: 2
 ---
 The book is Ben Horowitz’s memoir with a particular focus on his company Opsware and the lessons he learned there.
 
-
 ### From Communist to Venture Capitalist
 Ben’s father was a communist, and he grew in the People’s republic of Berkeley. His first job was at NetLabs, which was run by professional management with little appreciation for the product or the technology. This job taught him the importance of founders CEOs. The job took a toll on his personal life, and to stabilize that, he left and joined Lotus. As soon as he came across Mosaic, he was mesmerized by the Internet and applied for Netscape. Marc Andreessen interviewed him, and is now his business partner at A16Z.
-
-> Leadership is the ability to get someone to follow you even if out of curiosity.
 
 <hr>
 
 ### 1. I will survive
 Ben started LoudCloud, which was doing well before the dot-com bust. Its primary customers were all startups, and the customer bankruptcies decimated the revenue growth. The private funding was hard to come by, and Ben decided to take LoudCloud public. The Saas model of recognizing revenues only when they are earned (whereas the software revenue is recognized as soon as it is sold) and similar issues made the S-1 filing look bad. It got termed as IPO from hell. The reverse split to keep the stock price high enough further destroyed the fantasies of the employees. The IPO roadshow on the east coast was severely impacted by his wife’s west coast allergic reaction leading to the emergency room. The IPO happened at $6 per share. No one, not even the underwriting bankers were happy. The macroeconomic condition worsened, and the revenue guidance could not have met in the further quarters. So, the finance department suggested that let’s reset it completely, rather than doing that in steps.
 
-> If you are going to eat shit, don’t nibble.
-
 The underwriters, Goldman Sachs and Morgan Stanley, dropped analyst coverage in response; the stock fell to $2. Then 9/11 happened. Then 26/11 Exodus, Loudcloud’s largest competitor, a $50 billion market cap company with $800 million raised filed bankruptcy. Ben realized that the operations are too fragile; he thought of acquiring Data Return and realized that neither’s future is bright. So, he decided to exit the cloud business completely and extract out the software business, which was built for cloud automation (Opsware). The stock slowly rose to $4, and Ben decided to raise $50 million from private investors. That’s when Atriax, the largest customer who owned $25 million, filed for bankruptcy. The plan to raise money was put on hold, and the acquisition was sought out. EDS and IBM were played against each other on an artificial deadline of eight weeks. EDS wanted to Loudcloud more than IBM. It eventually made the acquisition, excluding Opsware, for $63.5 million. It even licensed Opsware for $20 million a year. 140 employees got laid off, another 150 went to EDS, and 80 were left with Opsware. On Bill Campbell’s recommendation, Ben stayed with the employees on the west coast when the announcement happened in New York. In Bill’s words, “If you don’t treat the people who are leaving fairly, then those who stay back would never trust you again.”
-
-> If you don’t treat the people who are leaving fairly then those who stay back would never trust you again
 
 <hr>
 
 ### 2. This time with feeling
 The stock price has fallen to $0.35, and NASDAQ warned that the stock would be delisted. Some members of the executive team who did not understand software accounting & sales had to let go of. The stock price rose to $7. But then EDS, which accounted for 90% of the revenue, wanted to cancel the contract since the deployment has not gone as smoothly as expected. EDS gave Opsware 60 days to fix all the issues. The head of the EDS servers’ team loved Tangram and hated CA products. EDS was going to get the latter for free in a deal. Opsware did the diligence of Tangram, found it to be bad, but even then acquired it for $10 million, which was a 67% premium to its market value at that time. Opsware offered Tangram for free in that 60-day window. The problem seems to have been solved. But then BladeLogic started to beat Opsware. The stock price was back to $2.90. The company went for another war-mode for the next six months. When things were going well, it was decided to go beyond server automation and look into network automation.
-
-> All decisions are objective until the first line of the code is written. And then they are emotional.
 
 Ben could have built something internally or acquire another company. All decisions are objective until the first line of the code is written. And then they are emotional. Ben, therefore, decided to see if there is a possibility to acquire before starting an internal effort. Among the four automation companies, the cheapest one (Rendition networks) had the best architecture. Ben believed that the market was wrong. Opsware acquired Rendition networks for $33 million, three months later, Cisco paid $30 million to license its technology. Slowly the acquisition offers started to tick in. Virtualization was also taking over. The share price was about $7. Ben talked to the team, and almost everyone wanted to exit. He decided that the price would be $14. HP acquired it for $14.25 per share ($1.65 billion in cash).
 
@@ -45,40 +36,27 @@ Ben could have built something internally or acquire another company. All decisi
 #### No Plan B
 Startup CEOs should not play the odds. Statistics are against them, and they don’t change the difficulty of the task at hand. A good startup CEO can focus and make the best move when there are no right moves.
 
-> A good startup CEO has the ability to focus and make the best move when there are no good moves.
-
 An excellent principle to follow is the first principle of Bushido: keep death in mind at all times. So, you may conduct yourself properly in all actions. Being a startup CEO is a fierce struggle, if you don’t like it, don’t do it, but if you do it, don’t take it personally, find the best move, persist, and convince the team to follow you.
 
 #### Share all the news
 As a startup CEO, share the news, both bad and good. It builds up trust, brings in diverse opinions, and allow bad news to be known faster. When people bring problems out in the open, they get solved. A culture that punished people from talking about the problems prevents the free flow of information. An example would be “don’t bring me a problem without bringing a solution”.
 
-> In any human interaction, required amount of communication is inversely proportional to the level of trust.
-
 #### Layoffs
 Loudcloud went through three layoffs but still got sold for more than a billion-dollar. Layoffs destroy the morale of the employees who are left. Unless they are done right.
 
-> Layoffs destroy morale of the employees which are left. Unless they are done right.
 
 If the financial situation requires, the CEO should clear off his head of the past glory, execute quickly to avoid leaks, be honest about the reason that its company’s failures and not the individual’s performance issues, layoff must be completed by the manager since the employee is going to remember every last detail of this day, the CEO should address the entire company, and after the layoff, the CEO should be present and visible. Messaging and execution are essential for people who are staying.
-
-> The messaging and execution [of layoffs]  is important for the people who are staying.
 
 #### Firing
 Firing an executive is relatively more straightforward since they have been on the other side of the table.
 
 1. Root cause analysis – Figure out why the executive was hired in the first place. It could be a poor job role definition based on some abstract idea. Hiring could have been for lack of weakness. Hiring for the scale too soon, which might be attained in some hypothetical future. Hiring a generic “great” head of sales, ignoring the unique situation of your company. An Executive who had a mismatch of ambition or failed to integrate into the company.
 
-> Hiring should be for strengths not for the lack of weakness
-
-> There is no great head of sales. There can only be a great head of sales for your company for next 12-24 months.
-
 2. Inform the board
 Call board members individually and face them, then call the board meeting, give a good severance package to the executive, ensure that his reputation is preserved.
 
 3. Prepare the conversation
 State decisively (“I have decided” not, “I think”), be clear on the reason, and have the details of the severance ready. Let him decide how to communicate the decision to the company and the world. You cannot let him keep his job, but you absolutely can let him keep his respect.
-
-> You cannot let him keep his job, but you absolutely can let him keep his respect.
 
 4. Inform the company
 Inform their direct reports, other staff members, and the company, in that order, on the same day. CEO should ideally fully take over the role in the interim.  It will also help the CEO decide whom to hire for the position.
@@ -94,8 +72,6 @@ Sometimes, there are no silver bullets, and there are several lead bullets that 
 
 #### Nobody cares
 Nobody [except you] cares about the underlying cause of why things are going wrong. It does not help them at all. Don’t waste time explaining why things are going wrong; spend it on trying to make them right.
-
-> Don’t waste time explaining why things are going wrong, spend it on trying to make them right.
 
 #### People > Product > Profit
 Ben wanted to hire a new head of sales, Mark Cranney aced the interview but was from a lesser-known university and did not look like the head of sales. The more time he spent with him, the more he was convinced that Mark is the right guy. He fought against the whole board, and the decision turned out to be great in the long run. Hiring the right people and taking good care of them is of the highest importance to an organization.
@@ -124,8 +100,6 @@ Short-term, expedient decisions with expensive long-term consequences can lead t
 ### 4. Company politics
 CEOs who avoid politics, accidentally, end up encouraging it.
 
-> The right kind of ambition is ambition for the company’s success and the individual’s own success being a by-product of it.
-
 If one executive complains about another’s behavior, get both of them into one room to resolve the issue. If an executive complains about another’s performance and you already knew it, then it is already too late; you should fire that executive since improving skills is doable, but regaining the support of the organization is hard for him/her. If an executive complains about another’s performance and it’s new news, strongly disagree right there and then evaluate the complaint objectively. Individuals optimizing personal achievements over the company are bad. Worse if they are managers since that encourages employees to do so.
 
 #### Titles and promotions
@@ -140,8 +114,6 @@ Some smart employees are bad.
 
 3. The jerk – Bad behavior cripples communication. If the VP of marketing is a jerk, then no one will bring up the issue of marketing in the meeting, communication will slowly break down, and the topic of marketing will never come up. A few jerks who are making massively positive contributions are ok, but adding more of them will destroy the company.
 
-> If anytime someone raising a concern about marketing is attacked by VP of marketing then topic of marketing will stop showing up in the meetings.
-
 #### Old People
 Hiring senior people into a startup is like an athlete taking a performance-enhancing drug; if all goes well, you will achieve new heights. If all goes wrong, you will start degenerating from the inside out.
 
@@ -153,8 +125,6 @@ Properly designed culture might look bizarre from the outside, but that’s a co
 
 #### Scaling a Company
 Scaling a human organization requires an organizational design (all have shortcomings, choose the one which suits best), and a corresponding [communication] process. The organization should dictate the individual leaders and not the opposite scenario, where the personal ambitions of the individuals dictate the organizational structure. If you want particular individuals or groups to communicate more, put them under the same manager. The further away people are in the organizational chart, the less they will communicate.
-
-> The further away people are in the organizational chart, the less they will communicate.
 
 #### The Scale Anticipation Fallacy
 Hire executives who will do the job for the next 12 months, don’t anticipate and try to hire executives who can handle scale longer than that.  Any judgment passed on an executive by comparing them to some hypothetical size of the company in the future is a bad idea. Scaling is an acquired skill, the act of judging them in advance creates prejudice. And even hiring a more experienced executive does not help since you would have to reevaluate eventually whether s/he is the right person or not. Rather than passing an absolute judgment, always think about whether you can hire a better person at this point and who will s/he be.
@@ -170,8 +140,6 @@ In a human organization, things are bound to go wrong. A CEO usually takes two e
 #### The fine line between fear and courage
 The most critical decisions test courage far more than intelligence. The right decision is obvious, but the pressure to make the wrong one can be overwhelming. Going with the crowd is always the safer choice but not always the best outcome. Every correct decision makes you more courageous and the wrong one more cowardly. The financial bar for starting a company has gone down; the courage bar remains high it has ever been.
 
-> The most important decisions test courage far more than intelligence.
-
 #### Ones and Twos
 There are two core skills for running an organization. Knowing what to do and getting the company to do what you know. The “ones” are good at knowing while the “twos” are good at getting the company to move. Ones gather data from many sources and make good decisions. They dislike execution-related tasks like process, goal setting, and performance management. Twos have a love for action and find it challenging to make critical decisions. An ideal CEO should have both skills. This leads to a tricky CEO transition problem. Most CEOs will be ones and have twos reporting to them, promoting the twos to the CEO could be harmful. Microsoft did that with Bill Gates to Steve Ballmer transition in 2000. Promoting one from deep within can cause the executive twos to leave, GE did with Jack Welch in 1981, and that turned out to be phenomenal. No easy way to do the transition.
 
@@ -186,7 +154,7 @@ Some employees make products; some make sales, a CEO makes decisions. That’s w
 
 <hr>
 
-### 5. The first rule of entrepreneurship: There are no rules
+### 5. The first rule of entrepreneurshipship: There are no rules
 Right when Opsware was in a bidding war between BMC and HP, the  E&Y partner from BMC’s diligence process claimed that the reinstatement of finances is required unless the contracts were amended in 48 hours. Ben was able to gather the three [bank] customers and change the contract. BMC still backed out, and acquisition happened for $14.25 when Ben was expecting it to be $15. His learning was that there is no point arguing when things go south, accept it, and get on.
 
 #### Accountability vs. Creativity paradox
