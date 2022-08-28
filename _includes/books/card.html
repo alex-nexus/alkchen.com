@@ -15,7 +15,8 @@
                 <h6>by {{ book.authors | join: ", " }}</h6>
                 {% if book.rating %}
                     <div class="mb-2 mt-2 font-weight-normal">
-                        {% include star_rating.html %}
+                        {% assign rating = book.rating %}
+                        {% include star_rating.html rating=rating %}
                     </div>
                 {% endif %}
             </p>                    

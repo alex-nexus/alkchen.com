@@ -1,11 +1,24 @@
 {% assign solid_count = rating | integer | floor %}
-{% assign empty_count = 5 | minus: solid_count %}
+
+{% assign half_count = rating | modulo: 1 %}
+{% if half_count > 0 %}
+  {% assign half_count = 1 %}
+{% else %}
+  {% assign half_count = 0 %}
+{% endif %}
+
+{% assign empty_count = 5 | minus: solid_count | minus: half_count%}
 
 <div class="rating-holder">
   <div class="c-rating c-rating--regular">
     {% for i in (1..solid_count) %}
       <i class="fa-solid fa-star"></i>
     {% endfor %}
+
+    {% for i in (1..half_count) %}
+      <i class="fa-solid fa-star-half"></i>
+    {% endfor %}
+
     {% for i in (1..empty_count) %}
       <i class="fa-regular fa-star"></i>
     {% endfor %}
