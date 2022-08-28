@@ -5,17 +5,19 @@
                 <div class="wrapthumbnail">
                     <img class="img-fluid" src="{{ quote.image }}">                           
                     <div class="card-img-overlay d-flex align-items-center">
-                        <div class="w-75 text-center text-capitalize text-white">
-                            {{ quote.content }}
-                            <br>
-                            <h3>- {{ quote.author | replace: '_', ' ' | capitalize }}</h3>
+                        <div class="w-75 text-center text-white">
+                            <div class="px-5">
+                                <h2 class="">{{ quote.content }}</h2>
+                                <br>
+                                <h3>- {{ quote.author | replace: '_', ' ' | capitalize }}</h3>
+                            </div>                            
                         </div>  
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="col-md-3">
+        <div class="col-md-3 col-xs-hidden">
             <div class="card-header">
                 <span class="badge rounded-pill bg-primary text-capitalize">{{ quote.type | replace: "_", " " }}</span>                        
 
