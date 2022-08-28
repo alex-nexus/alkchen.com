@@ -7,42 +7,30 @@ layout: default
     </h2>
 </div>
 
-<section class="posts">
-    <div class="section-title">
-        <h2>
-            <span class="text-capitalize">Summaries</span>
-        </h2>
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-posts-tab" data-bs-toggle="tab" data-bs-target="#nav-posts" type="button" role="tab" aria-controls="nav-posts" aria-selected="false">Posts</button>
+      <button class="nav-link" id="nav-quotes-tab" data-bs-toggle="tab" data-bs-target="#nav-quotes" type="button" role="tab" aria-controls="nav-quotes" aria-selected="false">Quotes</button>
     </div>
-    <div class="row listrecent">
-        {% for post in site.posts %}
-            {% if post.book and post.book == page.title %}
-                {% include posts/row.html post=post %}                
-            {% endif %}
-        {% endfor %}
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-posts" role="tabpanel" aria-labelledby="nav-posts-tab">
+        <div class="row mt-2">
+            {% for post in site.posts %}
+                {% if post.book and post.book == page.title %}
+                    {% include posts/row.html post=post %}                
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
-</section>
+    <div class="tab-pane fade" id="nav-quotes" role="tabpanel" aria-labelledby="nav-quotes-tab">
+        <div class="row mt-2">
+            {% for quote in site.quotes %}
+                {% if quote.book and quote.book == page.title %}
+                    {% include quotes/row.html short_description=short_description%}            
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>    
+  </div>
 
-<section class="quotes">
-    <div class="section-title">
-        <h2>
-            <span class="text-capitalize">Quotes</span>
-        </h2>
-    </div>
-    
-    {% for quote in site.quotes %}
-        {% if quote.book and quote.book == page.title %}
-            {% include quotes/row.html short_description=short_description%}            
-        {% endif %}
-    {% endfor %}
-</section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-    <div class="pointerup">
-        <i class="fa fa-caret-up"></i>
-    </div>
-    <span class="navigation" role="navigation">
-        {% include pagination.html %}
-    </span>
-</div>
