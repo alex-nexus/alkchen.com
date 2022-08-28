@@ -8,7 +8,7 @@ category: leadership
 tags: [ book summary, influence ]
 source_url: https://www.johnmaxwell.com/blog/the-5-levels-of-leadership1/
 image: https://images-na.ssl-images-amazon.com/images/I/41DGzSUtbNL.jpg
-card_with: 2
+card_width: 2
 ---
 
 A business executive. A softball coach. A classroom teacher. A volunteer coordinator. A parent.

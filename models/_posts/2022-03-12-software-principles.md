@@ -7,6 +7,7 @@ poster: alex
 categories: [ software ]
 tags: [ me ]
 image: /assets/images/posts/principles.jpeg
+card_width: 4
 ---
 
 Below are some principles I learned over the course of my career: 

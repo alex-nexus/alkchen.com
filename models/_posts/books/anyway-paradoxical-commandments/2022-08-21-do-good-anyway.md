@@ -9,7 +9,7 @@ tags: [good]
 image: http://img1.imagesbn.com/p/9781577318408_p0_v1_s260x420.JPG
 source_url: https://theinvisiblementor.com/do-good-anyway/
 youtube_url: https://www.youtube.com/embed/uBYvF8Tvs9I
-card_with: 2
+card_width: 2
 ---
 
 ### Introduction: Do Good Anyway

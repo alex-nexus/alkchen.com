@@ -8,7 +8,7 @@ poster: ashishb
 categories: [ entrepreneur, software ]
 tags: [ book summary, featured ]
 source_url: https://ashishb.net/book-summary/book-summary-hard-things-about-hard-things-by-ben-horowitz/
-card_with: 2
+card_width: 2
 ---
 The book is Ben Horowitz’s memoir with a particular focus on his company Opsware and the lessons he learned there.
 

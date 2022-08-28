@@ -7,7 +7,7 @@ poster: memyselfandi007
 categories: [ future ]
 tags: [ platform, crowd ]
 source_url: https://valueandopportunity.com/2018/02/04/book-review-machine-platform-crowd-harnessing-our-digital-future/
-card_with: 2
+card_width: 2
 ---
 “Machine, Platform Crowd” tries to summarize what in the author’s view are the currently most important changes that will impact both, individuals and companies going forward:
 

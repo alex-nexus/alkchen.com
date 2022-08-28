@@ -7,7 +7,7 @@ poster: sglaveski
 categories: [ leadership ]
 tags: [ book summary, coaching, featured]
 source_url: https://medium.com/steveglaveski/leadership-lessons-from-bill-campbell-the-trillion-dollar-coach-37d5494c8be2
-card_with: 2
+card_width: 3
 ---
 Trillion Dollar Coach: The Leadership Playbook of Silicon Valley’s Bill Campbell was an absolutely gripping read about a legendary coach and business executive, whose mentoring of the likes of Steve Jobs, Larry Page, Eric Schmidt, and Jeff Bezos, amongst other tech luminaries, played a major role in the success of their companies.
 
