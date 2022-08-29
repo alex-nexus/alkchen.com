@@ -21,7 +21,9 @@ allowed_image_extnames: [.jpg, .jpeg, .png, .webp, .gif]
 <section class="featured-posts">
     <div class="row">
         {% for quote in site.quotes %}
+            {% assign author = quote.author %}            
             {% assign poster = site.data.posters[quote.poster] %}
+            
             {% assign image_index = forloop.index | modulo: images_count %}
             {% assign image = quote_images[image_index] %}
             
