@@ -1,12 +1,11 @@
 ---
 layout: post
-type: book_summary
 title:  Hard Things about Hard Things by Ben Horowitz
 book: The Hard Thing About Hard Things
 authors: [Ben Horowitz]
 poster: ashishb
 categories: [ entrepreneurship, software ]
-tags: [ book summary, featured ]
+tags: [ summary, featured ]
 source_url: https://ashishb.net/book-summary/book-summary-hard-things-about-hard-things-by-ben-horowitz/
 card_width: 2
 ---

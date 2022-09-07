@@ -1,6 +1,5 @@
 ---
 layout: post
-type: video
 title:  Mastery | Robert Greene | Talks at Google
 books: Mastery
 poster: alex

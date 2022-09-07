@@ -1,11 +1,10 @@
 ---
 layout: post
-type: book_summary
 title: Leadership Lessons from Bill Campbell, the Trillion Dollar Coach
 book: Trillion Dollar Coach
 poster: sglaveski
 categories: [ leadership ]
-tags: [ book summary, coaching, featured]
+tags: [ summary, coaching, featured]
 source_url: https://medium.com/steveglaveski/leadership-lessons-from-bill-campbell-the-trillion-dollar-coach-37d5494c8be2
 card_width: 3
 ---
