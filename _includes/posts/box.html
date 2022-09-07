@@ -5,7 +5,7 @@
     {% assign short_description = post.content %}
 {% endif %}
 
-{% if post.type == 'book_summary' %}
+{% if post.tags contains 'summary' %}
     {% for book in site.books %}
         {% if post.book == book.title %}
             {% assign image = book.image %}
