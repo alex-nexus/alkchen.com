@@ -1,14 +1,17 @@
-{% assign lg_left = post.card_width | default: 6 %}
-{% assign lg_right = 12 | minus: lg_left %}
+{% if image %}
+    {% assign lg_left = post.card_width | default: 6 %}
+    {% assign lg_right = 12 | minus: lg_left %}
+{% else %}
+    {% assign lg_left = post.card_width | default: 0 %}
+    {% assign lg_right = 12 %}
+{% endif %}
 
 <div class="card mb-2">
     <div class="row g-0">
         <div class="col-lg-{{ lg_left }}">
             <div class="wrapthumbnail">
-                {% if image %}
-                    <img class="img-fluid" src="{{ image }}">
-                {% endif %}                                    
-            </div>            
+                <img class="img-fluid" src="{{ image }}">
+            </div>
         </div>
         
         <div class="col-lg-{{ lg_right }}">
