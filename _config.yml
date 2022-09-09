@@ -46,8 +46,9 @@ pagination:
   per_page: 10
   permalink: '/:num/'
   limit: 0
+  sort_field: 'date'
+  sort_reverse: true
     
-
 kramdown:
   input: GFM
   syntax_highlighter: rouge
