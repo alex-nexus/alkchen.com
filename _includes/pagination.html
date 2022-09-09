@@ -12,7 +12,7 @@
     {% elsif page == 1 %}
       <a class="mx-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
-      <a class="mx-1" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <a class="mx-1" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: 'page:num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
 
