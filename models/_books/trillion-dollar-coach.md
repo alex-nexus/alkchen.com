@@ -9,6 +9,6 @@ amazon_url: https://www.amazon.com/Trillion-Dollar-Coach-Leadership-Playbook/dp/
 categories: [ leadership ]
 raings_count: 1914
 rating: 4.5
-image: https://images-na.ssl-images-amazon.com/images/I/41vgassjrKL.jpg
+image: https://m.media-amazon.com/images/I/41SkGv3-SuL.jpg
 description: 
 ---

@@ -36,7 +36,7 @@ pagination:
                 {% assign short_description = quote.content | strip_html %}
             {% endif %}
             
-            {% include quotes/card.html image=image %}
+            {% include quotes/row.html image=image %}
         {% endfor %}        
     </div>
 </section>
