@@ -1,50 +1,52 @@
 <div class="col-md-12 mb-4">
     <div class="card">
-        <div class="card-header">
-            <div class="float-start">
-                {% if quote.book %}
-                    <div class="badge rounded-pill bg-primary text-capitalize">{{ quote.book }}</div>
-                {% endif %}
+        <div class="row g-0">
+            <div class="col-md-2 d-none d-sm-block">
+                <img src="{{book.image}}" class="img-fluid rounded-start">
+            </div>
+            <div class="col-sm-10 col-xs-12">
+                <div class="card-header">
+                    {% if quote.author %}
+                        <div class="badge rounded-pill bg-secondary text-capitalize">{{ quote.author }}</div>
+                    {% endif %}
 
-                {% if quote.chapter %}
-                    <span class="badge rounded-pill bg-primary text-capitalize">Chapter {{ quote.chapter }}</span>
-                {% endif %}
+                    {% if quote.book %}
+                        <div class="badge rounded-pill bg-primary text-capitalize">{{ quote.book }}</div>
+                    {% endif %}
 
-                {% assign sorted_categories = quote.categories | compact | sort %}
-                {% for category in sorted_categories %}
-                <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}" target="_blank">
-                    <span class="badge rounded-pill bg-danger text-capitalize">{{ category }}</span>
-                </a>
-                {% endfor %}
+                    {% if quote.chapter %}
+                        <span class="badge rounded-pill bg-primary text-capitalize">Chapter {{ quote.chapter }}</span>
+                    {% endif %}
 
-                {% assign sorted_tags = quote.tags | compact | sort %}
-                {% for tag in sorted_tags %}
-                    <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">
-                        <span class="badge rounded-pill bg-warning text-capitalize">{{ tag }}</span>
+                    {% assign sorted_categories = quote.categories | compact | sort %}
+                    {% for category in sorted_categories %}
+                    <a class="smoothscroll text-decoration-none" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}" target="_blank">
+                        <span class="badge rounded-pill bg-danger text-capitalize">{{ category }}</span>
                     </a>
-                {% endfor %}                
-            </div>
-            <div class="float-end">
-                {% if quote.tags contains 'featured' %}        
-                    <svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25">
-                        <path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path>
-                    </svg>
-                {% endif %} 
-            </div>
-        </div>
+                    {% endfor %}
 
-        <div class="card-body">
-            <figure class="">
-                <blockquote class="blockquote">
-                    <h4>{{ quote.content | newline_to_br }}</h4>
-                </blockquote>
-                                
-                {% if quote.author %}                    
-                    <figcaption class="blockquote-footer text-center">
+                    {% assign sorted_tags = quote.tags | compact | sort %}
+                    {% for tag in sorted_tags %}
+                        <a class="smoothscroll text-decoration-none" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">
+                            <span class="badge rounded-pill bg-warning text-capitalize">{{ tag }}</span>
+                        </a>
+                    {% endfor %}
+                    <div class="float-end">
+                        {% if quote.tags contains 'featured' %}
+                            <svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25">
+                                <path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path>
+                            </svg>
+                        {% endif %} 
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <p class="fs-5">{{ quote.content | newline_to_br | truncate: 500 }}</p>
+                    <figcaption class="blockquote-footer text-center align-bottom">
                         <cite title="{{ quote.author }}">{{ quote.author }}</cite>
                     </figcaption>
-                {% endif %}                
-            </figure>
+                </div>                
+            </div>
         </div>
     </div>
 </div>

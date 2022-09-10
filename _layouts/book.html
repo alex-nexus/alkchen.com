@@ -1,9 +1,8 @@
 ---
 layout: default
 ---
-
 {% assign book = page %}
-    
+
 <div class="section-title">
     <h2><span class="text-capitalize">{{ page.layout | capitalize }}: {{ page.title | capitalize }}</span></h2>
 </div>
@@ -37,7 +36,7 @@ layout: default
         <div class="row mt-4">
             {% for quote in site.quotes %}
                 {% if quote.book and quote.book == page.title %}
-                    {% include quotes/row.html short_description=short_description %}
+                    {% include quotes/row.html %}
                 {% endif %}
             {% endfor %}
         </div>
