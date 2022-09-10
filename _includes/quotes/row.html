@@ -2,10 +2,6 @@
     <div class="card">
         <div class="card-header">
             <div class="float-start">
-                {% if quote.author %}
-                    <div class="badge rounded-pill bg-secondary text-capitalize">{{ quote.author }}</div>
-                {% endif %}
-
                 {% if quote.book %}
                     <div class="badge rounded-pill bg-primary text-capitalize">{{ quote.book }}</div>
                 {% endif %}
@@ -42,10 +38,12 @@
                 <blockquote class="blockquote">
                     <h4>{{ quote.content | newline_to_br }}</h4>
                 </blockquote>
-            
-                <figcaption class="blockquote-footer">
-                    <cite title="{{ quote.author }}">{{ quote.author }}</cite>
-                </figcaption>
+                                
+                {% if quote.author %}                    
+                    <figcaption class="blockquote-footer">
+                        <cite title="{{ quote.author }}">{{ quote.author }}</cite>
+                    </figcaption>
+                {% endif %}                
             </figure>
         </div>
     </div>

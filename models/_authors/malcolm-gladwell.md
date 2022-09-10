@@ -1,6 +1,5 @@
 ---
 layout: author
-type: author
 name: Malcolm Gladwell
 image_url: https://m.media-amazon.com/images/S/amzn-author-media-prod/ndtsjs1mbus8ubg04hv02g5f3l.jpg
 category: learning
