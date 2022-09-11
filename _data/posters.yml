@@ -6,8 +6,6 @@ openai:
   display_name: Open AI
   avatar_file: assets/images/avatars/openai.jpg
   description: "Author of this website"
-bill_campbell:
-  display_name: Bill Campbell
 ashishb:
   display_name: ASHI
   web: https://ashishb.net/
@@ -20,12 +18,6 @@ agile_actors:
   display_name: Agile Actors
   avatar_url: https://miro.medium.com/fit/c/176/176/1*o2gqK5A6W3k5ztjF679Q7A.png
   web: https://medium.com/@agileactors
-ben_horowitz:
-  display_name: Ben Horowitz
-  web: https://a16z.com/author/ben-horowitz/
-john_maxwell:
-  display_name: John Maxwell
-  web: https://www.maxwellleadership.com/
 avil_beckford:
   display_name: Avil Beckford
   

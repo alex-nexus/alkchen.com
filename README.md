@@ -41,3 +41,16 @@
 ### Images
   - https://wallpapercave.com/
   - https://wallup.net/
+
+### summaries 
+  - https://www.samuelthomasdavies.com/
+  - https://www.shortform.com/
+  - https://fourminutebooks.com/book-summaries/
+  - https://zeroavatar.com/category/book-summaries/
+  - https://tylerdevries.com/book-summaries/
+  - https://theartofliving.com/book-summaries/
+  - https://ashishb.net/books-worth-reading/
+  - https://booksconcepts.com/
+  - https://growth.me/books/
+  - https://www.hustleescape.com/lifelong-learning/
+  - https://jamesclear.com/book-summaries
