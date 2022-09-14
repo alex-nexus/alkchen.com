@@ -1,36 +1,26 @@
-<!-- begin post -->
-<div class="col-md-6 mb-30px">
-    <div class="listfeaturedtag h-100">
-        <div class="row h-100 g-0">
-            <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
-                <div class="wrapthumbnail">
-                    <a href="{{ site.baseurl }}{{ author.url }}">
-                        <img class="featured-box-img-cover" src="{{ author.image_url }}">
-                    </a>
-                </div>                
-            </div>
-            <div class="col-12 col-md-12 col-lg-7">
-                <div class="h-100 card-group">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                <a class="text-dark" href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a>                                
-                            </h2>
-                            <h4 class="card-text">{{ author.introduction | strip_html | truncatewords:15 }}</h4>
-                        </div>
-                        <div class="card-footer b-0 bg-white mt-auto">
-                            <div class="wrapfooter">
-                                <div class="mb-2 mt-2 font-weight-normal">
-                                    {% assign rating = author.rating %}
-                                    {% include star_rating.html rating=rating%}
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="col-lg-3 col-md-6 col-xs-12 card-group pb-2">
+    <div class="card">
+        <div class="wrapthumbnail">
+            <a href="{{ site.baseurl }}{{ author.url }}">
+                <img class="rounded mx-auto d-block" style="width: 50%" src="{{ author.image_url }}" alt="{{ book.title }}">                                    
+            </a>            
         </div>
+        <div class="card-body">
+            <a class="text-dark" href="{{ site.baseurl }}{{ author.url }}"></a>
+                <div class="card-title text-dark text-capitalize text-decoration-none">
+                    {{ author.name }}
+                </div>
+            </a>
+            <p class="card-text">
+                <h6>{{ author.introduction | strip_html | truncatewords:15 }}</h6>
+                {% if author.rating %}
+                    <div class="mb-2 mt-2 font-weight-normal">
+                        {% assign rating = author.rating %}
+                        {% include star_rating.html rating=rating%}                        
+                    </div>
+                {% endif %}
+            </p>                    
+            <div class="clearfix"></div>                                            
+        </div>        
     </div>
 </div>
-<!-- end post -->
