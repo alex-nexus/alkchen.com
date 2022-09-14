@@ -8,6 +8,6 @@ categories: [ leadership ]
 tags: [ featured, influence ]
 rating: 5
 ratings_count : 3436
-image: https://images-na.ssl-images-amazon.com/images/I/41DGzSUtbNL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg
+image: https://images-na.ssl-images-amazon.com/images/I/41DGzSUtbNL.jpg
 description: 
 ---
