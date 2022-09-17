@@ -15,9 +15,9 @@
         {% endfor %}
     {% elsif post.images %}
         {% assign image = post.images[0] %}
-    {% else %}
+    {% elsif post.image %}
         {% assign image = post.image %}
     {% endif %}
     
-    {% include posts/card.html %}
+    {% include posts/card.html image=image %}
 </div>

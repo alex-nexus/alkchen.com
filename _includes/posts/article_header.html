@@ -1,15 +1,19 @@
 {% assign author = site.data.posters[page.poster] %}
     
-<dl class="row mt-4">       
-    <dt class="col-sm-3 text-md-left">Author:</dt>
-    <dd class="col-sm-9">
-        {% if author.avatar_file %}
-            <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar_file }}" alt="{{ author.display_name }}">
-        {% elsif author.avatar_url %}
-            <img class="author-thumb" src="{{ author.avatar_url }}" alt="{{ author.display_name }}">
-        {% endif %}
-        {{ author.display_name }}
-    </dd>
+<dl class="row">       
+    {% if page.author %}
+        <dt class="col-sm-3">Author:</dt>
+        
+        <dd class="col-sm-9">
+            {{ page.author }}
+            {% if author.avatar_file %}
+                <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar_file }}" alt="{{ author.display_name }}">
+            {% elsif author.avatar_url %}
+                <img class="author-thumb" src="{{ author.avatar_url }}" alt="{{ author.display_name }}">
+            {% endif %}
+            {{ author.display_name }}
+        </dd>
+    {% endif %}
     
     <dt class="col-sm-3">Date:</dt>
     <dd class="col-sm-9">{{ page.date | date_to_string }}</dd>
@@ -17,6 +21,11 @@
     {% if page.description %}
         <dt class="col-sm-3">Description:</dt>
         <dd class="col-sm-9">{{ page.description }}</dd>        
+    {% endif %}
+
+    {% if page.tagline %}
+        <dt class="col-sm-3">Tagline:</dt>
+        <dd class="col-sm-9">{{ page.tagline }}</dd>        
     {% endif %}
     
     {% if page.tags %}
