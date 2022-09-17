@@ -1,47 +1,56 @@
 {% assign author = site.data.posters[page.poster] %}
-    
-<dl class="row">       
-    {% if page.author %}
-        <dt class="col-sm-3">Author:</dt>
+
+<div class="card px-2 py-2">
+    <dl class="row">       
+        {% if page.author %}
+            <dt class="col-sm-3">Author:</dt>
+            
+            <dd class="col-sm-9">
+                <h6>
+                    <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">
+                        <span class="badge bg-info text-dark rounded-pill text-capitalize">{{ page.author }}</span>
+                    </a>
+                </h6>
+                
+                {% if author.avatar_file %}
+                    <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar_file }}" alt="{{ author.display_name }}">
+                {% elsif author.avatar_url %}
+                    <img class="author-thumb" src="{{ author.avatar_url }}" alt="{{ author.display_name }}">
+                {% endif %}
+                {{ author.display_name }}
+            </dd>
+        {% endif %}
         
-        <dd class="col-sm-9">
-            {{ page.author }}
-            {% if author.avatar_file %}
-                <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar_file }}" alt="{{ author.display_name }}">
-            {% elsif author.avatar_url %}
-                <img class="author-thumb" src="{{ author.avatar_url }}" alt="{{ author.display_name }}">
-            {% endif %}
-            {{ author.display_name }}
-        </dd>
-    {% endif %}
-    
-    <dt class="col-sm-3">Date:</dt>
-    <dd class="col-sm-9">{{ page.date | date_to_string }}</dd>
-    
-    {% if page.description %}
-        <dt class="col-sm-3">Description:</dt>
-        <dd class="col-sm-9">{{ page.description }}</dd>        
-    {% endif %}
+        <dt class="col-sm-3">Date:</dt>
+        <dd class="col-sm-9">{{ page.date | date_to_string }}</dd>
+        
+        {% if page.description %}
+            <dt class="col-sm-3">Description:</dt>
+            <dd class="col-sm-9">{{ page.description }}</dd>        
+        {% endif %}
 
-    {% if page.tagline %}
-        <dt class="col-sm-3">Tagline:</dt>
-        <dd class="col-sm-9">{{ page.tagline }}</dd>        
-    {% endif %}
-    
-    {% if page.tags %}
-        <dt class="col-sm-3">Tags:</dt>
-        <dd class="col-sm-9">
-            {% assign sorted_tags = page.tags | sort %}
-            {% for tag in sorted_tags %}
-            <span class="badge bg-light text-dark rounded-pill">
-                <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">{{ tag }}</a>
-            </span>
-            {% endfor %}
-        </dd>
-    {% endif %}
+        {% if page.tagline %}
+            <dt class="col-sm-3">Tagline:</dt>
+            <dd class="col-sm-9">{{ page.tagline }}</dd>        
+        {% endif %}
+        
+        {% if page.tags %}
+            <dt class="col-sm-3">Tags:</dt>
+            <dd class="col-sm-9">
+                {% assign sorted_tags = page.tags | sort %}
+                {% for tag in sorted_tags %}
+                <h6>
+                    <a class="smoothscroll" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}" target="_blank">
+                        <span class="badge bg-info text-dark rounded-pill text-capitalize">{{ tag }}</span>
+                    </a>
+                </h6>
+                {% endfor %}
+            </dd>
+        {% endif %}
 
-    {% if page.source_url %}
-        <dt class="col-sm-3">Source:</dt>
-        <dd class="col-sm-9"><a class="card-link" href="{{ page.source_url }}" target="_blank">link</a></dd>        
-    {% endif %}    
+        {% if page.source_url %}
+            <dt class="col-sm-3">Source:</dt>
+            <dd class="col-sm-9"><a class="card-link" href="{{ page.source_url }}" target="_blank">link</a></dd>        
+        {% endif %}    
+    </div>
 </div>
