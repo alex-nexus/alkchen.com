@@ -6,7 +6,7 @@ author: alex
 poster: alex
 categories: [ software ]
 tags: [ blog ]
-image: /assets/images/posts/principles.jpeg
+image: /assets/images/articles/northstar.png
 card_width: 4
 ---
 

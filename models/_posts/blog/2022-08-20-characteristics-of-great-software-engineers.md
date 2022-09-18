@@ -4,7 +4,8 @@ title: 10 characteristics of a great software engineer
 poster: openai
 categories: [ software ]
 tags: [blog]
-image: /assets/images/posts/4.jpg
+card_width: 4
+image: /assets/images/articles/DALLE-a-wise-and-great-software-engineer-watercolor.png
 ---
 
 ##### 1. A great software engineer is someone who is passionate about their work and takes pride in their code.
