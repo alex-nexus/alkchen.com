@@ -54,3 +54,4 @@
   - https://growth.me/books/
   - https://www.hustleescape.com/lifelong-learning/
   - https://jamesclear.com/book-summaries
+  - https://www.getstoryshots.com/
