@@ -3,7 +3,7 @@ layout: post
 title:  Mastery | Robert Greene | Talks at Google
 books: Mastery
 poster: alex
-category: personal
+category: personal development
 tags: [ youtube, book, video ]
 youtube_uid: J4v_34RRCeE
 image: https://i.ytimg.com/vi/J4v_34RRCeE/hq720.jpg

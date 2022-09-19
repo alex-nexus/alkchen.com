@@ -3,7 +3,7 @@ layout: post
 title:  BOOK REVIEW - MACHINE, PLATFORM, CROWD – HARNESSING OUR DIGITAL FUTURE
 book: Machine, Platform, Crowd
 poster: memyselfandi007
-categories: [ future ]
+categories: [ trend ]
 tags: [summary, platform, crowd ]
 source_url: https://valueandopportunity.com/2018/02/04/book-review-machine-platform-crowd-harnessing-our-digital-future/
 card_width: 2

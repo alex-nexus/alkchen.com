@@ -22,6 +22,34 @@
 
 `gsutil rsync -Ri _site/ gs://www.alkchen.com`
 
+### Categories
+  - Personal Development
+  - Family
+    - Parenting
+    - Marriage
+  - Christian  
+  
+  - Entrepreneurship  
+    - Startup
+
+  - Finance
+    - Investing
+
+  - Leadership
+  
+  - Work    
+    - Self-employment
+    - Freelancing
+    - Management    
+
+  - Product
+    - Software 
+    - Agile
+
+  - Knowledge
+    - Psychology
+    - Trend
+
 ###
   - [Adding a CNAME record](https://cloud.google.com/identity/docs/add-cname?hl=en_US)
   - [Host a static website](https://cloud.google.com/storage/docs/hosting-static-website)
