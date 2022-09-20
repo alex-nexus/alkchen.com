@@ -64,22 +64,9 @@
   - [Jekyll Generators](https://jekyllrb.com/docs/plugins/generators/)
   - [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/)
   - [CSS colors](https://www.w3schools.com/cssref/css_colors.asp)
-
+  - [Notablog](https://github.com/dragonman225/notablog#Getting-Started)
 
 ### Images
   - https://wallpapercave.com/
   - https://wallup.net/
 
-### summaries 
-  - https://www.samuelthomasdavies.com/
-  - https://www.shortform.com/
-  - https://fourminutebooks.com/book-summaries/
-  - https://zeroavatar.com/category/book-summaries/
-  - https://tylerdevries.com/book-summaries/
-  - https://theartofliving.com/book-summaries/
-  - https://ashishb.net/books-worth-reading/
-  - https://booksconcepts.com/
-  - https://growth.me/books/
-  - https://www.hustleescape.com/lifelong-learning/
-  - https://jamesclear.com/book-summaries
-  - https://www.getstoryshots.com/
