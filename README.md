@@ -41,6 +41,7 @@
     - Self-employment
     - Freelancing
     - Management    
+    - Hiring
 
   - Product
     - Software 
