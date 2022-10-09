@@ -23,10 +23,11 @@
 `gsutil rsync -Ri _site/ gs://www.alkchen.com`
 
 ### Categories
-  - Personal Development
+  - Personal
   - Family
     - Parenting
     - Marriage
+    
   - Christian  
   
   - Entrepreneurship  
@@ -42,6 +43,8 @@
     - Freelancing
     - Management    
     - Hiring
+
+  - Releationship
 
   - Product
     - Software 
