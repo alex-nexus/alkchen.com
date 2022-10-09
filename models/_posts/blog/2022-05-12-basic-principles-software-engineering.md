@@ -2,7 +2,7 @@
 layout: post
 title:  4 Basic Principles of Software Engineering
 type: article
-author: agile_actors
+author: Agile Actors
 poster: alex
 categories: [ software ]
 tags: [article]

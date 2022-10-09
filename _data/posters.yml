@@ -1,5 +1,5 @@
 alex:
-  display_name: AC
+  display_name: Alex C
   avatar_file: assets/images/avatars/alex.jpeg
   description: "Author of this website"
 openai: 
@@ -10,14 +10,15 @@ ashishb:
   display_name: ASHI
   web: https://ashishb.net/
   description: "Author"
-sglaveski:
+Steve Glaveski:
   display_name: Steve Glaveski
   avatar_url: https://miro.medium.com/fit/c/88/88/1*X4C0i2lwN4YvU6ntNbadXg.png
   web: https://medium.com/@glaveski
-agile_actors:
+Agile Actors:
   display_name: Agile Actors
   avatar_url: https://miro.medium.com/fit/c/176/176/1*o2gqK5A6W3k5ztjF679Q7A.png
   web: https://medium.com/@agileactors
-avil_beckford:
+Avil Beckford:
   display_name: Avil Beckford
-  
+Itamar Goldminz:
+  display_name: Itamar Goldminz

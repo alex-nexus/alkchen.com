@@ -2,7 +2,7 @@
 layout: post
 title: Do Good Anyway - Anyway the Paradoxical Commandments by Kent Keith
 book: Anyway-The Paradoxical Commandments
-poster: avil_beckford
+poster: Avil Beckford
 categories: [christian]
 tags: [good, summary]
 source_url: https://theinvisiblementor.com/do-good-anyway/
