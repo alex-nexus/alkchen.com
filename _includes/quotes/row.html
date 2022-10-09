@@ -1,8 +1,27 @@
+{% for book in site.books %}
+    {% if book.title == quote.book %}
+        {% assign book = book  %}
+    {% endif %}
+{% endfor %}
+
+
+{% for author in site.authors %}
+    {% if author.name == quote.author %}
+        {% assign author = author  %}
+    {% endif %}
+{% endfor %}
+
 <div class="col-md-12 mb-4">
     <div class="card">
         <div class="row g-0">
             <div class="col-md-2 d-none d-sm-block">
-                <img src="{{book.image}}" class="img-fluid rounded-start">
+                {% if book %}
+                    <img src="{{book.image}}" class="img-fluid rounded-start">
+                {% elsif author %}
+                    <img src="{{author.image}}" class="img-fluid rounded-start">
+                {% elsif quote.image %}
+                    <img src="{{quote.image}}" class="img-fluid rounded-start">
+                {% endif %}
             </div>
             <div class="col-sm-10 col-xs-12">
                 <div class="card-header">

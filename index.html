@@ -15,11 +15,7 @@ pagination:
 <section class="featured-posts">
     <div class="row">
         {% for quote in paginator.posts %}
-            {% for book in site.books %}
-                {% if book.title == quote.book %}
-                    {% include quotes/row.html book=book %}
-                {% endif %}
-            {% endfor %}                            
+            {% include quotes/row.html book=book %}            
         {% endfor %}        
     </div>
 </section>
