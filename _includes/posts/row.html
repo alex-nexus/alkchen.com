@@ -1,6 +1,12 @@
 <div class="col-md-12 mb-2">
     {% assign poster = site.data.posters[post.poster] %}
-    
+
+    {% if post.redirect_external_link %}
+        {% assign article_url = post.source_url %}
+    {% else %}
+        {% assign article_url = site.baseurl | append: post.url %}
+    {% endif %}
+
     {% if post.description %}
         {% assign short_description = post.description %}
     {% elsif post.content %}
@@ -18,6 +24,6 @@
     {% elsif post.image %}
         {% assign image = post.image %}
     {% endif %}
-    
+
     {% include posts/card.html image=image %}
 </div>
