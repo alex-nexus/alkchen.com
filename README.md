@@ -20,7 +20,7 @@
 
 `gcloud config set project jekyll-content-site`
 
-`gsutil rsync -Ri _site/ gs://www.alkchen.com`
+`gsutil rsync -R _site/ gs://www.alkchen.com`
 
 ### Categories
   - Personal
