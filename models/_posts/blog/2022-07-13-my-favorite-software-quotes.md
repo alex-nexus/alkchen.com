@@ -15,9 +15,9 @@ images: [
     ]
 ---
 
-{% for image_url in page.images %}
+{% for image in page.images %}
 <div class="my-2">
-    <img class="my-2 img-thumbnail rounded mx-auto d-block" src="{{image_url}}">
+    <img class="my-2 img-thumbnail rounded mx-auto d-block" src="{{image}}">
 </div>    
 {% endfor %}
 

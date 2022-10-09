@@ -1,7 +1,7 @@
 ---
 layout: author
 name: Clayton Christensen
-image_url: https://m.media-amazon.com/images/I/91LYrj5nwPL._SX450_.jpg
+image: https://m.media-amazon.com/images/I/91LYrj5nwPL._SX450_.jpg
 category: business
 tag: featured
 rating: 4

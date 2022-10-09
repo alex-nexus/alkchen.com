@@ -1,7 +1,7 @@
 ---
 layout: author
 name: Randy Street
-image_url: https://m.media-amazon.com/images/I/81naPuuYIHL.jpg
+image: https://m.media-amazon.com/images/I/81naPuuYIHL.jpg
 category: Work
 tags: [hiring]
 rating: 3

@@ -1,7 +1,7 @@
 ---
 layout: author
 name: Geoff Smart
-image_url: https://m.media-amazon.com/images/S/amzn-author-media-prod/c71idtbqgigem7t75e57mf38d0.jpg
+image: https://m.media-amazon.com/images/S/amzn-author-media-prod/c71idtbqgigem7t75e57mf38d0.jpg
 category: Work
 tags: [hiring]
 rating: 3
